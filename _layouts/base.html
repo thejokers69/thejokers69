@@ -7,16 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title | default: site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
   {%- include header.html -%}
 
+  <section class="hero">
+    <img src="https://via.placeholder.com/800x200" alt="Banner" class="hero-banner">
+  </section>
+
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
       <!-- About Me Section -->
       <section id="about-me" class="about-me">
-        <h2>About Me</h2>
+        <h2><i class="fas fa-user"></i> About Me</h2>
         <p>🎓 I’m a second-year Computer Engineering student at Mundiapolis University.</p>
         <p>🌱 Currently on break for my internship in fruit grading.</p>
         <p>🔍 Interested in Machine Learning and Web Development.</p>
@@ -25,7 +30,7 @@
 
       <!-- Skills Section -->
       <section id="skills" class="skills">
-        <h2>Skills & Technologies</h2>
+        <h2><i class="fas fa-tools"></i> Skills & Technologies</h2>
         <ul>
           <li><strong>Languages:</strong> Python, JavaScript, Node.js, Spring Boot, Java, HTML, CSS, PHP</li>
           <li><strong>Frameworks & Libraries:</strong> React, Django, TensorFlow</li>
@@ -36,21 +41,51 @@
 
       <!-- Projects Section -->
       <section id="projects" class="projects">
-        <h2>Projects</h2>
-        <ul>
-          <li><a href="https://github.com/thejokers69/travel-reservation-api.git">Travel Reservation API</a> - A REST API for travel reservations.</li>
-          <li><a href="https://github.com/thejokers69/analyseur_donnees.git">Data Analyzer</a> - A Django application for data analysis.</li>
-          <li><a href="https://github.com/thejokers69/tp3_Gere_Patient.git">Patient Management System</a> - A Spring MVC application for managing patients.</li>
-          <li><a href="https://github.com/thejokers69/TP1-Mundiapolis-NodeJS.git">Node.js CRUD for Books</a> - A Node.js application for managing books.</li>
-        </ul>
+        <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+        <div class="project-cards">
+          <div class="project-card">
+            <h3>Travel Reservation API</h3>
+            <p>A REST API for travel reservations built with Node.js, Express, and MongoDB.</p>
+            <a href="https://github.com/thejokers69/travel-reservation-api.git" target="_blank">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Data Analyzer</h3>
+            <p>A Django application for analyzing data files.</p>
+            <a href="https://github.com/thejokers69/analyseur_donnees.git" target="_blank">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Patient Management System</h3>
+            <p>A Spring MVC application for managing patients, featuring listing, pagination, search, and deletion.</p>
+            <a href="https://github.com/thejokers69/tp3_Gere_Patient.git" target="_blank">View Project</a>
+          </div>
+          <div class="project-card">
+            <h3>Node.js CRUD for Books</h3>
+            <p>A Node.js application developed as part of a university assignment.</p>
+            <a href="https://github.com/thejokers69/TP1-Mundiapolis-NodeJS.git" target="_blank">View Project</a>
+          </div>
+        </div>
       </section>
 
       <!-- Contact Section -->
       <section id="contact" class="contact">
-        <h2>Contact</h2>
+        <h2><i class="fas fa-envelope"></i> Contact</h2>
         <p>Email: <a href="mailto:mohamed.lakssir@gmail.com">mohamed.lakssir@gmail.com</a></p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/mohamed-lakssir-b6b4301a4" target="_blank" rel="noopener noreferrer">Mohamed Lakssir</a></p>
         <p>GitHub: <a href="https://github.com/thejokers69" target="_blank" rel="noopener noreferrer">thejokers69</a></p>
+
+        <!-- Formulaire de contact -->
+        <form action="https://formspree.io/f/xanngzpd" method="POST">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+
+          <button type="submit">Send</button>
+        </form>
       </section>
     </div>
   </main>
