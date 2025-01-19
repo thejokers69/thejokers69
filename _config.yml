@@ -1,2 +1,6 @@
 # thejokers69/_config.yml
+title: "The Joker's Portfolio"
+description: "My personal site and projects"
+baseurl: ""
+url: "https://thejokers69.tech"  # Ton domaine personnalisé
 theme: minima
