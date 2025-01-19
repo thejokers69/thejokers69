@@ -17,14 +17,14 @@
   {%- include header.html -%}
 
   <section class="hero">
-    <img src="https://via.placeholder.com/800x200" alt="Banner" class="hero-banner">
+    <img src="https://via.placeholder.com/800x200" alt="Banner image" class="hero-banner">
   </section>
 
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
       <!-- About Me Section -->
       <section id="about-me" class="about-me">
-        <h2><i class="fas fa-user"></i> About Me</h2>
+        <h2><i class="fas fa-user" aria-hidden="true"></i> About Me</h2>
         <p>🎓 I’m a second-year Computer Engineering student at Mundiapolis University.</p>
         <p>🌱 Currently on break for my internship in fruit grading.</p>
         <p>🔍 Interested in Machine Learning and Web Development.</p>
@@ -33,7 +33,7 @@
 
       <!-- Skills Section -->
       <section id="skills" class="skills">
-        <h2><i class="fas fa-tools"></i> Skills & Technologies</h2>
+        <h2><i class="fas fa-tools" aria-hidden="true"></i> Skills & Technologies</h2>
         <ul>
           <li><strong>Languages:</strong> Python, JavaScript, Node.js, Spring Boot, Java, HTML, CSS, PHP</li>
           <li><strong>Frameworks & Libraries:</strong> React, Django, TensorFlow</li>
@@ -44,7 +44,7 @@
 
       <!-- Projects Section -->
       <section id="projects" class="projects">
-        <h2><i class="fas fa-project-diagram"></i> Projects</h2>
+        <h2><i class="fas fa-project-diagram" aria-hidden="true"></i> Projects</h2>
         <div class="project-cards">
           <!-- Project Cards -->
         </div>
@@ -52,7 +52,7 @@
 
       <!-- Contact Section -->
       <section id="contact" class="contact">
-        <h2><i class="fas fa-envelope"></i> Contact</h2>
+        <h2><i class="fas fa-envelope" aria-hidden="true"></i> Contact</h2>
         <form action="https://formspree.io/f/xanngzpd" method="POST">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -69,6 +69,4 @@
   {%- include footer.html -%}
 </body>
 
-
-</html>
 </html>

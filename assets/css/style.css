@@ -30,6 +30,12 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Ajout d'un style pour améliorer l'accessibilité des liens */
+a:focus {
+  outline: 2px dashed #007acc;
+  outline-offset: 2px;
+}
+
 .site-header {
   position: fixed;
   top: 0;
@@ -119,6 +125,7 @@ form button:hover {
   background-color: #005fa3;
 }
 
+/* Vérification de la réactivité */
 @media (max-width: 600px) {
   .site-header {
     padding: 10px;
@@ -130,5 +137,10 @@ form button:hover {
 
   .project-cards {
     grid-template-columns: 1fr;
+  }
+  
+  .hero-banner {
+    width: 100%;
+    height: auto;
   }
 }
