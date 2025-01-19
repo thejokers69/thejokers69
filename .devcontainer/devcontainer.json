@@ -1,11 +1,9 @@
 {
-    // Name this configuration
-    "name": "copilot's the joker!",
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "GitHub.copilot"
-            ]
-        }
+  // Name this configuration
+  "name": "copilot's the joker!",
+  "customizations": {
+    "vscode": {
+      "extensions": ["GitHub.copilot"]
     }
+  }
 }

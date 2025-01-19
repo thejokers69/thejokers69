@@ -6,25 +6,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title | default: site.title }}</title>
-  {%- include head.html -%}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 
 <body>
-
   {%- include header.html -%}
 
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
+      <!-- About Me Section -->
       <section id="about-me" class="about-me">
         <h2>About Me</h2>
-        <p>Connect with me on <a href="https://www.linkedin.com/in/mohamed-lakssir-b6b4301a4" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+        <p>🎓 I’m a second-year Computer Engineering student at Mundiapolis University.</p>
+        <p>🌱 Currently on break for my internship in fruit grading.</p>
+        <p>🔍 Interested in Machine Learning and Web Development.</p>
+        <p>🎶 Outside of tech, I enjoy long drives, relaxing on the beach, and listening to piano music.</p>
       </section>
-      {{ content }}
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills">
+        <h2>Skills & Technologies</h2>
+        <ul>
+          <li><strong>Languages:</strong> Python, JavaScript, Node.js, Spring Boot, Java, HTML, CSS, PHP</li>
+          <li><strong>Frameworks & Libraries:</strong> React, Django, TensorFlow</li>
+          <li><strong>Tools:</strong> GitHub, Docker, Azure Cloud, AWS Academy</li>
+          <li><strong>Databases & Cloud:</strong> MySQL, PostgreSQL, MongoDB, Firebase</li>
+        </ul>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <ul>
+          <li><a href="https://github.com/thejokers69/travel-reservation-api.git">Travel Reservation API</a> - A REST API for travel reservations.</li>
+          <li><a href="https://github.com/thejokers69/analyseur_donnees.git">Data Analyzer</a> - A Django application for data analysis.</li>
+          <li><a href="https://github.com/thejokers69/tp3_Gere_Patient.git">Patient Management System</a> - A Spring MVC application for managing patients.</li>
+          <li><a href="https://github.com/thejokers69/TP1-Mundiapolis-NodeJS.git">Node.js CRUD for Books</a> - A Node.js application for managing books.</li>
+        </ul>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:mohamed.lakssir@gmail.com">mohamed.lakssir@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mohamed-lakssir-b6b4301a4" target="_blank" rel="noopener noreferrer">Mohamed Lakssir</a></p>
+        <p>GitHub: <a href="https://github.com/thejokers69" target="_blank" rel="noopener noreferrer">thejokers69</a></p>
+      </section>
     </div>
   </main>
 
   {%- include footer.html -%}
-
 </body>
 
 </html>
