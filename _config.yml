@@ -3,4 +3,4 @@ title: "Welcome to The Joker's Portfolio"
 description: "My personal site and projects"
 baseurl: ""
 url: "https://thejokers69.tech"
-theme: minima
+theme: jekyll-theme-minimal
