@@ -9,13 +9,14 @@
   <title>{{ page.title | default: site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link rel="icon" href="{{ '/assets/images/favicon.ico' | relative_url }}" type="image/x-icon">
+  {%- include head.html -%}
 </head>
 
 <body>
   {%- include header.html -%}
 
   <section class="hero">
-    <h1>Welcome to My Portfolio</h1>
     <img src="https://via.placeholder.com/800x200" alt="Banner" class="hero-banner">
   </section>
 
@@ -68,4 +69,6 @@
   {%- include footer.html -%}
 </body>
 
+
+</html>
 </html>
