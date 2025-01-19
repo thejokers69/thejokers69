@@ -1,5 +1,3 @@
-# Hello, I’m Mohamed Lakssir (aka Simo) 👋
-
 ### 👨‍💻 About Me
 - 🎓 I’m a second-year Computer Engineering student at Mundiapolis University.
 - 🌱 Currently on break for my internship in fruit grading.
