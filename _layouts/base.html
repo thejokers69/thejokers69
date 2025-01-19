@@ -1,10 +1,11 @@
 <!-- _layouts/base.html -->
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}" dir="ltr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ site.description }}">
   <title>{{ page.title | default: site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -14,6 +15,7 @@
   {%- include header.html -%}
 
   <section class="hero">
+    <h1>Welcome to My Portfolio</h1>
     <img src="https://via.placeholder.com/800x200" alt="Banner" class="hero-banner">
   </section>
 
@@ -43,47 +45,20 @@
       <section id="projects" class="projects">
         <h2><i class="fas fa-project-diagram"></i> Projects</h2>
         <div class="project-cards">
-          <div class="project-card">
-            <h3>Travel Reservation API</h3>
-            <p>A REST API for travel reservations built with Node.js, Express, and MongoDB.</p>
-            <a href="https://github.com/thejokers69/travel-reservation-api.git" target="_blank">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Data Analyzer</h3>
-            <p>A Django application for analyzing data files.</p>
-            <a href="https://github.com/thejokers69/analyseur_donnees.git" target="_blank">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Patient Management System</h3>
-            <p>A Spring MVC application for managing patients, featuring listing, pagination, search, and deletion.</p>
-            <a href="https://github.com/thejokers69/tp3_Gere_Patient.git" target="_blank">View Project</a>
-          </div>
-          <div class="project-card">
-            <h3>Node.js CRUD for Books</h3>
-            <p>A Node.js application developed as part of a university assignment.</p>
-            <a href="https://github.com/thejokers69/TP1-Mundiapolis-NodeJS.git" target="_blank">View Project</a>
-          </div>
+          <!-- Project Cards -->
         </div>
       </section>
 
       <!-- Contact Section -->
       <section id="contact" class="contact">
         <h2><i class="fas fa-envelope"></i> Contact</h2>
-        <p>Email: <a href="mailto:mohamed.lakssir@gmail.com">mohamed.lakssir@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/mohamed-lakssir-b6b4301a4" target="_blank" rel="noopener noreferrer">Mohamed Lakssir</a></p>
-        <p>GitHub: <a href="https://github.com/thejokers69" target="_blank" rel="noopener noreferrer">thejokers69</a></p>
-
-        <!-- Formulaire de contact -->
         <form action="https://formspree.io/f/xanngzpd" method="POST">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" placeholder="Your Name" required>
-
           <label for="email">Email</label>
           <input type="email" id="email" name="_replyto" placeholder="Your Email" required>
-
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-
           <button type="submit">Send</button>
         </form>
       </section>

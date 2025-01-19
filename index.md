@@ -1,3 +1,8 @@
+<section class="hero">
+  <h1>Welcome to My Portfolio</h1>
+  <img src="https://via.placeholder.com/800x200" alt="Banner" class="hero-banner">
+</section>
+
 ### 👨‍💻 About Me
 - 🎓 I’m a second-year Computer Engineering student at Mundiapolis University.
 - 🌱 Currently on break for my internship in fruit grading.
