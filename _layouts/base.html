@@ -2,24 +2,29 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title | default: site.title }}</title>
   {%- include head.html -%}
+</head>
 
-  <body>
+<body>
 
-    {%- include header.html -%}
+  {%- include header.html -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        <section class="about-me">
-          <h2>About Me</h2>
-          <p>Connect with me on <a href="https://www.linkedin.com/in/mohamed-lakssir-b6b4301a4" target="_blank">LinkedIn</a>.</p>
-        </section>
-        {{ content }}
-      </div>
-    </main>
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      <section id="about-me" class="about-me">
+        <h2>About Me</h2>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/mohamed-lakssir-b6b4301a4" target="_blank" rel="noopener noreferrer">LinkedIn</a>.</p>
+      </section>
+      {{ content }}
+    </div>
+  </main>
 
-    {%- include footer.html -%}
+  {%- include footer.html -%}
 
-  </body>
+</body>
 
 </html>
