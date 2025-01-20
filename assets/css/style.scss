@@ -1,6 +1,7 @@
 ---
 ---
 
+@import "{{ site.theme }}";
 @import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css";
 
 /* Global Styles */
@@ -143,4 +144,13 @@ body.light .site-footer {
   .site-nav .page-link {
     margin: 5px 0;
   }
+}
+
+.menu-icon {
+  font-size: 18px; /* Taille de l'icône */
+  color: #007acc; /* Couleur de l'icône */
+}
+
+.menu-icon:hover {
+  color: #005fa3; /* Couleur au survol */
 }
