@@ -2,11 +2,10 @@
 document.addEventListener("DOMContentLoaded", function () {
   console.log("Portfolio loaded successfully!");
 
-  // Sélectionne le bouton et le body
   const themeToggle = document.getElementById('theme-toggle');
   const body = document.body;
 
-  // Vérifie si un thème est défini dans localStorage
+  // Vérifie si un thème est enregistré dans localStorage
   const savedTheme = localStorage.getItem('theme');
   if (savedTheme) {
     body.classList.add(savedTheme);
@@ -14,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     body.classList.add('dark'); // Mode sombre par défaut
   }
 
-  // Gestionnaire d'événement pour basculer le thème
+  // Basculer entre le mode clair et sombre
   themeToggle.addEventListener('click', () => {
     if (body.classList.contains('dark')) {
       body.classList.replace('dark', 'light');
