@@ -1,4 +1,37 @@
 ---
 ---
 
-@import "{{ site.theme }}";
+@import "{{ site.theme }}"; // Importe les styles de votre thème
+@import "style.css";        // Importe vos styles personnalisés
+
+// Ajoutez ici vos styles SCSS
+body {
+    background-color: #121212; // Exemple de style pour le mode sombre
+    color: #e0e0e0;
+}
+
+.hero-banner {
+    border-radius: 15px;
+}
+
+nav.site-nav {
+    background-color: #1f1f1f;
+    padding: 10px;
+    border-bottom: 2px solid #007acc;
+}
+
+a {
+    color: #007acc;
+}
+
+a:hover {
+    color: #005fa3;
+    text-decoration: underline;
+}
+
+.hero {
+    background: linear-gradient(to bottom, #121212, #1f1f1f);
+    color: #e0e0e0;
+    padding: 20px;
+    text-align: center;
+}
