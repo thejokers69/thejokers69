@@ -6,4 +6,5 @@ url: "https://thejokers69.tech"
 theme: jekyll-theme-minimal
 
 sass:
+  sass_dir: _sass
   style: compressed
