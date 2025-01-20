@@ -11,3 +11,7 @@ sass:
 
 plugins:
   - jekyll-seo-tag
+
+collections:
+  pages:
+    output: true
