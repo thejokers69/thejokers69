@@ -1,0 +1,22 @@
+# Fichiers générés par Jekyll
+_site/
+.sass-cache/
+.jekyll-metadata
+
+# Fichiers temporaires
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+
+# Fichiers liés à l'environnement Ruby/Bundler
+Gemfile.lock
+vendor/
+
+# Node.js (si utilisé pour des scripts ou des dépendances)
+node_modules/
+
+# Fichiers de configuration spécifiques à un IDE
+.idea/
+.vscode/
+*.iml
