@@ -4,3 +4,6 @@ description: "My personal site and projects"
 baseurl: ""
 url: "https://thejokers69.tech"
 theme: jekyll-theme-minimal
+
+sass:
+  style: compressed
