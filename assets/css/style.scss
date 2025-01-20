@@ -12,13 +12,13 @@ body {
   font-family: "Arial", sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #121212; /* Mode sombre */
-  color: #e0e0e0;
+  background-color: #121212; /* Mode sombre par défaut */
+  color: #e0e0e0; /* Texte clair */
 }
 
 body.light {
-  background-color: #f5f5f5; /* Mode clair */
-  color: #121212;
+  background-color: #ffffff; /* Fond blanc pour le mode clair */
+  color: #121212; /* Texte sombre */
 }
 
 .wrapper {
@@ -32,7 +32,7 @@ body.light {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: #1f1f1f;
+  background-color: #1f1f1f; /* Fond sombre pour l'en-tête */
   padding: 15px 20px;
   display: flex;
   justify-content: space-between;
@@ -40,18 +40,31 @@ body.light {
   border-bottom: 1px solid #007acc;
 }
 
+body.light .site-header {
+  background-color: #f5f5f5; /* Fond clair pour l'en-tête */
+  border-bottom: 1px solid #007acc;
+}
+
 .site-title {
-  color: #ffffff;
+  color: #ffffff; /* Titre clair pour le mode sombre */
   font-size: 1.8rem;
   font-weight: bold;
   text-decoration: none;
 }
 
+body.light .site-title {
+  color: #121212; /* Titre sombre pour le mode clair */
+}
+
 .site-nav .page-link {
   margin-left: 15px;
-  color: #e0e0e0;
+  color: #e0e0e0; /* Liens clairs pour le mode sombre */
   text-decoration: none;
   font-size: 1rem;
+}
+
+body.light .site-nav .page-link {
+  color: #121212; /* Liens sombres pour le mode clair */
 }
 
 .site-nav .page-link:hover {
@@ -76,15 +89,24 @@ body.light {
 /* Main Content */
 main {
   padding: 20px;
-  background: linear-gradient(to bottom, #121212, #1f1f1f);
+  background-color: #1f1f1f; /* Fond sombre pour le contenu principal */
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+body.light main {
+  background-color: #ffffff; /* Fond clair pour le mode clair */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 h2 {
-  color: #ffffff;
+  color: #ffffff; /* Couleur des titres dans le mode sombre */
   border-bottom: 2px solid #007acc;
   padding-bottom: 5px;
+}
+
+body.light h2 {
+  color: #121212; /* Couleur des titres dans le mode clair */
 }
 
 a {
@@ -103,6 +125,12 @@ a:hover {
   padding: 10px;
   background-color: #1f1f1f;
   color: #e0e0e0;
+  border-top: 1px solid #007acc;
+}
+
+body.light .site-footer {
+  background-color: #f5f5f5;
+  color: #121212;
   border-top: 1px solid #007acc;
 }
 
