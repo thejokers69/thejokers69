@@ -2,7 +2,7 @@
 _site/
 .sass-cache/
 .jekyll-metadata
-
+.bundle/
 # Fichiers temporaires
 .DS_Store
 Thumbs.db
