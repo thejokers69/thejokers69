@@ -1,37 +1,119 @@
 ---
 ---
 
-@import "{{ site.theme }}"; // Importe les styles de votre thème
-@import "style.css";        // Importe vos styles personnalisés
+@import "{{ site.theme }}"; // Importe les styles du thème
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css";
 
-// Ajoutez ici vos styles SCSS
+// Styles généraux
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    background-color: #121212; // Exemple de style pour le mode sombre
-    color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212; // Exemple pour mode sombre
+  color: #e0e0e0;
 }
 
-.hero-banner {
-    border-radius: 15px;
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-nav.site-nav {
-    background-color: #1f1f1f;
-    padding: 10px;
-    border-bottom: 2px solid #007acc;
+h2 {
+  color: #333;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
 }
 
 a {
-    color: #007acc;
+  color: #007acc;
+  text-decoration: none;
 }
 
 a:hover {
-    color: #005fa3;
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #1f1f1f;
+  padding: 10px 20px;
+  border-bottom: 1px solid #007acc;
 }
 
 .hero {
-    background: linear-gradient(to bottom, #121212, #1f1f1f);
-    color: #e0e0e0;
-    padding: 20px;
-    text-align: center;
+  text-align: center;
+  margin-bottom: 20px;
+  background: linear-gradient(to bottom, #121212, #1f1f1f);
+  padding: 20px;
+  color: #e0e0e0;
+}
+
+.hero-banner {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #007acc;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #005fa3;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .project-cards {
+    grid-template-columns: 1fr;
+  }
+  .hero-banner {
+    width: 100%;
+    height: auto;
+  }
 }
