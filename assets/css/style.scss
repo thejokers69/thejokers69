@@ -146,10 +146,30 @@ body.light .site-footer {
 }
 
 .menu-icon {
-  font-size: 18px; /* Taille de l'icône */
-  color: #007acc; /* Couleur de l'icône */
+  font-size: 20px; /* Ajuster la taille */
+  color: #007acc; /* Couleur par défaut */
+  cursor: pointer; /* Curseur au survol */
+  transition: transform 0.3s ease; /* Animation douce */
 }
 
 .menu-icon:hover {
   color: #005fa3; /* Couleur au survol */
+  transform: scale(1.2); /* Zoom léger au survol */
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Afficher sur mobile */
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-icon {
+    display: none; /* Cacher sur les grands écrans */
+  }
+}
+
+.trigger {
+  display: flex !important; /* Toujours visible */
+  gap: 15px; /* Espacement entre les liens */
 }
