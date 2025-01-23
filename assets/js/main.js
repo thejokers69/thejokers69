@@ -5,23 +5,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const themeToggle = document.getElementById("theme-toggle");
   const body = document.body;
 
-  // Vérifie si un thème est enregistré dans localStorage
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme) {
-    body.classList.add(savedTheme);
-  } else {
-    body.classList.add("dark"); // Mode sombre par défaut
+  // Improved theme toggle with localStorage
+  function setTheme(theme) {
+    document.body.className = theme;
+    localStorage.setItem('theme', theme);
+    document.documentElement.style.setProperty('color-scheme', theme);
   }
 
-  // Basculer entre le mode clair et sombre
-  themeToggle.addEventListener("click", () => {
-    if (body.classList.contains("dark")) {
-      body.classList.replace("dark", "light");
-      localStorage.setItem("theme", "light");
-    } else {
-      body.classList.replace("light", "dark");
-      localStorage.setItem("theme", "dark");
-    }
+  // Initialisation
+  const currentTheme = localStorage.getItem('theme') || 'dark';
+  setTheme(currentTheme);
+
+  // Gestionnaire unique
+  document.getElementById('theme-toggle').addEventListener('click', () => {
+    const newTheme = document.body.classList.contains('dark') ? 'light' : 'dark';
+    setTheme(newTheme);
   });
 
   // Smooth scroll and intersection observer for animations
@@ -46,20 +44,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.querySelectorAll('.project-card, .skill-item').forEach((el) => {
     observer.observe(el);
-  });
-
-  // Improved theme toggle with localStorage
-  function setTheme(theme) {
-    document.body.className = theme;
-    localStorage.setItem('theme', theme);
-    document.documentElement.style.setProperty('color-scheme', theme);
-  }
-
-  const currentTheme = localStorage.getItem('theme') || 'dark';
-  setTheme(currentTheme);
-
-  document.getElementById('theme-toggle').addEventListener('click', () => {
-    const newTheme = document.body.classList.contains('dark') ? 'light' : 'dark';
-    setTheme(newTheme);
   });
 });
