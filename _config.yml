@@ -1,6 +1,6 @@
 # thejokers69/_config.yml
-title: "Welcome to The Joker's Portfolio"
-description: "My personal site and projects"
+title: "Mohamed Lakssir | TheJokers69"
+description: "Computer Engineering Student & Full-Stack Developer"
 baseurl: ""
 url: "https://thejokers69.tech"
 theme: jekyll-theme-minimal
@@ -18,4 +18,4 @@ collections:
 
 cache:
   enabled: true
-  duration: 3600 # 1 heure
+  duration: 3600

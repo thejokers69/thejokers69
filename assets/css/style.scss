@@ -67,6 +67,15 @@ body.light .site-header {
   text-decoration: none;
   font-family: 'Space Mono', monospace;
   letter-spacing: -0.05em;
+  display: flex;
+  flex-direction: column;
+}
+
+.site-title .username {
+  font-size: 0.6em;
+  font-weight: normal;
+  color: var(--secondary);
+  margin-top: -5px;
 }
 
 body.light .site-title {
@@ -247,4 +256,10 @@ body.light .site-footer {
 
 .project-card:hover {
   transform: translateY(-5px);
+}
+
+.digital-id {
+  font-size: 0.9em;
+  color: var(--secondary);
+  margin-top: -0.5rem;
 }

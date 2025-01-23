@@ -4,6 +4,9 @@ title: "About Me"
 permalink: /about-me/
 ---
 
-# About Me
+# Mohamed Lakssir
 
-Hello! I'm a second-year Computer Engineering student at Mundiapolis University. I'm passionate about Machine Learning and Web Development.
+Hello! I'm a second-year Computer Engineering student at Mundiapolis University passionate about building intelligent systems and web solutions.
+
+**Digital Identity:**  
+[@TheJokers69](https://github.com/thejokers69) - My developer persona for open-source contributions and experimental projects
