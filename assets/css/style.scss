@@ -27,6 +27,17 @@ body.light {
   padding: 20px;
 }
 
+/* CSS Variables */
+:root {
+  --primary: #007acc;
+  --secondary: #00c7ff;
+  --bg-dark: #0a192f;
+  --text-dark: #ccd6f6;
+  --bg-light: #f8f9fa;
+  --text-light: #172a45;
+  --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+}
+
 /* Header Styles */
 .site-header {
   position: sticky;
@@ -50,6 +61,8 @@ body.light .site-header {
   font-size: 1.8rem;
   font-weight: bold;
   text-decoration: none;
+  font-family: 'Space Mono', monospace;
+  letter-spacing: -0.05em;
 }
 
 body.light .site-title {
@@ -73,17 +86,28 @@ body.light .site-nav .page-link {
 
 /* Theme Toggle */
 .theme-toggle {
-  padding: 8px 12px;
-  background-color: #007acc;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  position: relative;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  background: var(--bg-dark);
+  border: 2px solid var(--primary);
 }
 
-.theme-toggle:hover {
-  background-color: #005fa3;
+.sun-moon {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--primary);
+  transition: transform 0.3s ease;
+}
+
+body.light .sun-moon {
+  transform: translateX(24px);
+  background: var(--secondary);
 }
 
 /* Main Content */
@@ -172,4 +196,51 @@ body.light .site-footer {
 .trigger {
   display: flex !important; /* Toujours visible */
   gap: 15px; /* Espacement entre les liens */
+}
+
+/* Header animations */
+.hamburger .bar {
+  transition: var(--transition);
+  background: var(--primary);
+}
+
+.gradient-text {
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.hover-underline {
+  position: relative;
+  padding-bottom: 3px;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--secondary);
+  transition: var(--transition);
+}
+
+.hover-underline:hover::after {
+  width: 100%;
+}
+
+/* Card styling for projects */
+.project-card {
+  background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 2rem;
+  margin: 1rem 0;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
 }

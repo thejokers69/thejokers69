@@ -1,7 +1,29 @@
 <!-- /workspaces/thejokers69/_includes/footer.html -->
 <footer class="site-footer">
   <div class="wrapper">
-    <p>&copy; {{ site.title }} {{ site.time | date: "%Y" }}</p>
-    <p>Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>.</p>
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://github.com/thejokers69" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:your@email.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </div>
+      
+      <p class="copyright">&copy; {{ site.title }} {{ site.time | date: "%Y" }}</p>
+      
+      <div class="tech-stack">
+        <span>Powered by:</span>
+        <div class="stack-icons">
+          <i class="fab fa-docker" title="Docker"></i>
+          <i class="fab fa-js-square" title="JavaScript"></i>
+          <i class="fab fa-python" title="Python"></i>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>
