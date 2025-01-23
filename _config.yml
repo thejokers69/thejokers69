@@ -15,3 +15,7 @@ plugins:
 collections:
   pages:
     output: true
+
+cache:
+  enabled: true
+  duration: 3600 # 1 heure
