@@ -7,15 +7,6 @@
     </a>
 
     <nav class="site-nav">
-      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-      <label for="nav-trigger" aria-label="Mobile menu">
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </label>
-
       <div class="trigger">
         {% for item in site.data.navigation %}
           <a class="page-link hover-underline" href="{{ item.link }}" data-text="{{ item.name }}">

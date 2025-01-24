@@ -174,11 +174,18 @@ body.light .site-footer {
 /* Responsive Design */
 @media (max-width: 768px) {
   .site-header {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: row; /* Keep horizontal layout */
+    align-items: center;
   }
-  .site-nav .page-link {
-    margin: 5px 0;
+
+  .menu-icon {
+    display: none !important; /* Remove hamburger icon */
+  }
+
+  .trigger {
+    display: flex !important; /* Always show nav links */
+    flex-direction: row; /* Keep horizontal layout */
+    gap: 15px;
   }
 }
 
@@ -192,12 +199,6 @@ body.light .site-footer {
 .menu-icon:hover {
   color: #005fa3; /* Couleur au survol */
   transform: scale(1.2); /* Zoom léger au survol */
-}
-
-@media (max-width: 768px) {
-  .menu-icon {
-    display: block; /* Afficher sur mobile */
-  }
 }
 
 @media (min-width: 769px) {
