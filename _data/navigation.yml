@@ -1,12 +1,12 @@
 # _data/navigation.yml
 navigation:
   - name: Profile
-    link: "{{ '/profile/' | relative_url }}"
+    link: /profile/
   - name: About
-    link: "{{ '/about-me/' | relative_url }}"
+    link: /about-me/
   - name: Skills
-    link: "{{ '/skills/' | relative_url }}"
+    link: /skills/
   - name: Projects
-    link: "{{ '/projects/' | relative_url }}"
+    link: /projects/
   - name: Contact
-    link: "{{ '/contact/' | relative_url }}"
+    link: /contact/

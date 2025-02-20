@@ -5,17 +5,13 @@
       <span class="gradient-text">Mohamed Lakssir</span>
       <small class="username">@TheJokers69</small>
     </a>
-
-    <nav class="site-nav">
+    <nav class="site-nav" aria-labelledby="site-nav-menu">
       <div class="trigger">
         {% for item in site.data.navigation %}
-          <a class="page-link hover-underline" href="{{ item.link }}" data-text="{{ item.name }}">
-            {{ item.name }}
-          </a>
+          <a class="page-link" href="{{ item.link | relative_url }}">{{ item.name }}</a>
         {% endfor %}
       </div>
     </nav>
-
     <button id="theme-toggle" class="theme-toggle" aria-label="Change theme">
       <i class="fas fa-sun"></i>
       <i class="fas fa-moon"></i>
