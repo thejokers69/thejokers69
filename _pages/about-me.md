@@ -4,7 +4,7 @@ title: "About Me"
 permalink: /about-me/
 ---
 
-# Mohamed Lakssir
+## Mohamed Lakssir
 
 Hello! I'm a second-year Computer Engineering student at Mundiapolis University passionate about building intelligent systems and web solutions.
 

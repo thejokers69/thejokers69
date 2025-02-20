@@ -4,10 +4,10 @@ title: "Skills"
 permalink: /skills/
 ---
 
-# Skills & Technologies
+## Skills & Technologies
 
 - **Languages**: Java, Python, JavaScript, SQL, HTML/CSS
-- **Frameworks**: 
+- **Frameworks**:
   - Backend: Spring MVC, Spring Boot, Express.js, Django
   - Frontend: Angular, React, Thymeleaf
   - AI/ML: TensorFlow, RAG architectures
