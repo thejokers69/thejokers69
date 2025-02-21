@@ -7,8 +7,10 @@
     </a>
     <nav class="site-nav" aria-labelledby="site-nav-menu">
       <div class="trigger">
+        {% comment %} Normalisation de l'URL courante {% endcomment %}
+        {% assign current_url = page.url | remove: "index.html" %}
         {% for item in site.data.navigation %}
-          {% unless page.permalink == item.link or page.url == item.link %}
+          {% unless current_url == item.link %}
             <a class="page-link" href="{{ item.link | relative_url }}">{{ item.name }}</a>
           {% endunless %}
         {% endfor %}
