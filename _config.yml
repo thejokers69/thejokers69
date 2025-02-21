@@ -11,6 +11,7 @@ sass:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 collections:
   pages:
