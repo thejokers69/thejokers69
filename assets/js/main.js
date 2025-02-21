@@ -5,24 +5,25 @@ document.addEventListener("DOMContentLoaded", function () {
   const themeToggle = document.getElementById("theme-toggle");
   const body = document.body;
 
-  // Improved theme toggle with localStorage
   function setTheme(theme) {
-    document.body.className = theme;
-    localStorage.setItem('theme', theme);
-    document.documentElement.style.setProperty('color-scheme', theme);
+    try {
+      body.className = theme;
+      localStorage.setItem('theme', theme);
+      document.documentElement.style.setProperty('color-scheme', theme);
+    } catch (e) {
+      body.className = theme;
+      console.warn('LocalStorage non-disponible, utilisation de la session uniquement.');
+    }
   }
 
-  // Initialisation
   const currentTheme = localStorage.getItem('theme') || 'dark';
   setTheme(currentTheme);
 
-  // Gestionnaire unique
-  document.getElementById('theme-toggle').addEventListener('click', () => {
-    const newTheme = document.body.classList.contains('dark') ? 'light' : 'dark';
+  themeToggle.addEventListener('click', () => {
+    const newTheme = body.classList.contains('dark') ? 'light' : 'dark';
     setTheme(newTheme);
   });
 
-  // Smooth scroll and intersection observer for animations
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
@@ -33,16 +34,28 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // Intersection Observer for fade-in effects
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.1 });
+  }, { threshold: 0.05 });
 
-  document.querySelectorAll('.project-card, .skill-item').forEach((el) => {
+  document.querySelectorAll('.project-card, .skill-item').forEach(el => {
     observer.observe(el);
   });
+
+  // Intégration de Google Analytics (optionnel)
+  (function() {
+    const script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=YOUR_GA_TRACKING_ID';
+    script.async = true;
+    document.head.appendChild(script);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'YOUR_GA_TRACKING_ID');
+  })();
 });

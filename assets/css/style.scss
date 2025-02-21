@@ -112,6 +112,16 @@ body.light .site-nav .page-link {
   border-radius: 50px;
   background: var(--bg-dark);
   border: 2px solid var(--primary);
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+body.light .theme-toggle {
+  background: var(--bg-light);
+  border-color: var(--primary);
 }
 
 .sun-moon {
@@ -194,6 +204,25 @@ body.light .site-footer {
     flex-direction: row; /* Keep horizontal layout */
     gap: 15px;
   }
+
+  main {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+
+  .project-card {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 10px;
+  }
+  .project-card {
+    padding: 1rem;
+    font-size: 0.85rem;
+  }
 }
 
 .menu-icon {
@@ -259,11 +288,21 @@ body.light .site-footer {
   border-radius: 15px;
   padding: 2rem;
   margin: 1rem 0;
-  transition: transform 0.3s ease;
-}
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 8px 15px rgba(0,122,204,0.3);
+  }
 
-.project-card:hover {
-  transform: translateY(-5px);
+  /* Animation pour apparition */
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .digital-id {

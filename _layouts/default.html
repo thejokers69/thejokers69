@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1e90ff">
+    <!-- Ajout du favicon -->
+    <link rel="icon" type="image/x-icon" href="{{ "assets/images/Logo-Of-TheJokerML.jpg" | relative_url }}">
 
     <!-- SEO Meta -->
     {% seo %}
@@ -22,24 +24,7 @@
     <div class="wrapper">
       <!-- Header Section -->
       <header class="site-header">
-        <div class="wrapper">
-          <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
-            {{ site.title }}
-          </a>
-          <nav class="site-nav">
-            <div class="trigger">
-              <a class="page-link" href="/about-me/">About Me</a>
-              <a class="page-link" href="/skills/">Skills</a>
-              <a class="page-link" href="/projects/">Projects</a>
-              <a class="page-link" href="/contact/">Contact</a>
-            </div>
-          </nav>
-
-          <!-- Theme Toggle Button -->
-          <button id="theme-toggle" class="theme-toggle" aria-label="Change theme">
-            <span class="sun-moon"></span>
-          </button>
-        </div>
+        {% include header.html %}
       </header>
 
       <!-- Main Content -->
