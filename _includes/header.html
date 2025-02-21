@@ -7,12 +7,17 @@
     </a>
     <nav class="site-nav" aria-labelledby="site-nav-menu">
       <div class="trigger">
-        {% for item in site.data.navigation %}
-          {% assign current_url = page.url | remove: 'index.html' | strip | prepend: '/' | append: '/' %}
-          {% unless current_url == item.link %}
-            <a class="page-link" href="{{ item.link | relative_url }}">{{ item.name }}</a>
-          {% endunless %}
-        {% endfor %}
+        {% if site.data.navigation %}
+          {% for item in site.data.navigation %}
+            {% assign current_url = page.url | remove: 'index.html' | strip | prepend: '/' | append: '/' %}
+            {% unless current_url == item.link or (current_url == '/' and item.link == '/') %}
+              <a class="page-link" href="{{ item.link | relative_url }}">{{ item.name }}</a>
+            {% endunless %}
+          {% endfor %}
+        {% else %}
+          <!-- Navigation data indisponible, vérifiez _data/navigation.yml -->
+          <p>Données de navigation non trouvées.</p>
+        {% endif %}
       </div>
     </nav>
     <button id="theme-toggle" class="theme-toggle" aria-label="Change theme">

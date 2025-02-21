@@ -3,7 +3,6 @@ title: "Mohamed Lakssir | TheJokers69"
 description: "Computer Engineering Student & Full-Stack Developer"
 baseurl: ""
 url: "https://thejokers69.tech"
-theme: jekyll-theme-minimal
 
 sass:
   sass_dir: assets/css
@@ -20,3 +19,4 @@ collections:
 cache:
   enabled: true
   duration: 3600
+# Suppression de "theme: jekyll-theme-minimal" pour forcer l'utilisation de vos layouts personnalisés.
