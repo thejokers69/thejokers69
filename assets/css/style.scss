@@ -94,14 +94,20 @@ body.light .site-title {
   color: #e0e0e0; /* Liens clairs pour le mode sombre */
   text-decoration: none;
   font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.site-nav .page-link:hover {
+  text-decoration: underline;
+  color: var(--secondary);
 }
 
 body.light .site-nav .page-link {
   color: #121212; /* Liens sombres pour le mode clair */
 }
 
-.site-nav .page-link:hover {
-  text-decoration: underline;
+body.light .site-nav .page-link:hover {
+  color: var(--primary);
 }
 
 /* Theme Toggle */
