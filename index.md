@@ -6,6 +6,8 @@ permalink: /
 keywords: "Mohamed Lakssir, TheJokers69, portfolio, ingénierie, Machine Learning, développement web"
 ---
 
+[![roadmap.sh](https://roadmap.sh/card/tall/67a29f6ef863343482fe2f28?variant=dark)](https://roadmap.sh)
+
 ## Bienvenue sur mon Portfolio
 
 <div class="hero">
