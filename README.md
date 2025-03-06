@@ -1,3 +1,4 @@
+[![roadmap.sh](https://roadmap.sh/card/tall/67a29f6ef863343482fe2f28?variant=dark)](https://roadmap.sh)
 ### 👨‍💻 About Me
 - 🎓 I’m a second-year Computer Engineering student at Mundiapolis University.
 - 🌱 Currently on break for my internship in fruit grading.
