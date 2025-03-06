@@ -4,7 +4,8 @@ title: "Mohamed Lakssir - Profile"
 permalink: /profile/
 ---
 
-  
+[![roadmap.sh](https://roadmap.sh/card/tall/67a29f6ef863343482fe2f28?variant=dark)](https://roadmap.sh)
+
 ## 👨💻 Developer Profile
   
 **Digital Identity:**  
