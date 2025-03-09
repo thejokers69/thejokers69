@@ -395,3 +395,68 @@ body.light .sidebar {
 .sidebar-toggle:hover {
   background-color: var(--secondary);
 }
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .sidebar-toggle {
+    left: 5px;
+    top: 5px;
+    padding: 8px;
+  }
+
+  .site-header {
+    padding: 10px 15px;
+  }
+
+  .site-title {
+    font-size: 1.5rem;
+  }
+
+  .site-nav .page-link {
+    font-size: 0.9rem;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  .project-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 150px;
+  }
+
+  .sidebar-toggle {
+    left: 3px;
+    top: 3px;
+    padding: 6px;
+  }
+
+  .site-header {
+    padding: 8px 10px;
+  }
+
+  .site-title {
+    font-size: 1.2rem;
+  }
+
+  .site-nav .page-link {
+    font-size: 0.8rem;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .project-card {
+    padding: 1rem;
+  }
+}
