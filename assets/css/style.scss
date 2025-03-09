@@ -355,3 +355,43 @@ body.light .site-footer {
 .profile-pic { width: 150px; border-radius: 50%; margin-bottom: 1rem; }
 .cta-button { display: inline-block; padding: 10px 20px; background: var(--primary); color: #fff; border-radius: 5px; }
 .cta-button:hover { background: var(--secondary); text-decoration: none; }
+
+/* Sidebar Styles */
+.sidebar {
+  position: fixed;
+  left: -250px;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+  transition: left 0.3s ease;
+  z-index: 200;
+  padding: 20px;
+}
+
+body.light .sidebar {
+  background-color: var(--bg-light);
+  color: var(--text-light);
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar-toggle {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 300;
+  border-radius: 5px;
+}
+
+.sidebar-toggle:hover {
+  background-color: var(--secondary);
+}

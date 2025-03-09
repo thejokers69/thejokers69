@@ -1,4 +1,5 @@
 // /workspaces/thejokers69/assets/js/main.js
+
 document.addEventListener("DOMContentLoaded", function () {
   console.log("Portfolio loaded successfully!");
 
@@ -46,4 +47,14 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelectorAll('.project-card, .skill-item').forEach(el => {
     observer.observe(el);
   });
+
+  
+  function toggleSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.classList.toggle('open');
+  }
+
+  
+  const sidebarToggle = document.querySelector('.sidebar-toggle');
+  sidebarToggle.addEventListener('click', toggleSidebar);
 });
