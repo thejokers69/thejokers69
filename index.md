@@ -28,10 +28,14 @@ keywords: "Mohamed Lakssir, TheJokers69, portfolio, ingénierie, Machine Learnin
   Voir mes projets
   </a>
 </div>
-{% for item in site.data.navigation %}
-  <a
-  href="{{ item.link | relative_url }}"
-  class="page-link">{{ item.name }}</a>
-{% endfor %}
+{% if site.data.navigation %}
+  {% for item in site.data.navigation %}
+    <a
+    href="{{ item.link | relative_url }}"
+    class="page-link">{{ item.name }}</a>
+  {% endfor %}
+{% else %}
+  <p>Données de navigation non trouvées.</p>
+{% endif %}
 
 <!-- ...autres contenus ou sections... -->

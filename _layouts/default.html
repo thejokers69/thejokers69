@@ -35,9 +35,13 @@
       <div class="sidebar">
         <nav>
           <ul>
-            {% for item in site.data.navigation %}
-              <li><a href="{{ item.link | relative_url }}">{{ item.name }}</a></li>
-            {% endfor %}
+            {% if site.data.navigation %}
+              {% for item in site.data.navigation %}
+                <li><a href="{{ item.link | relative_url }}">{{ item.name }}</a></li>
+              {% endfor %}
+            {% else %}
+              <li>Données de navigation non trouvées.</li>
+            {% endif %}
           </ul>
         </nav>
       </div>
