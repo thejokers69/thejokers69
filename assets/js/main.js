@@ -1,5 +1,3 @@
-/* Main JavaScript functionality for the portfolio */
-
 // /workspaces/thejokers69/assets/js/main.js
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -50,13 +48,13 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(el);
   });
 
-  // Function to toggle the sidebar
+  
   function toggleSidebar() {
     const sidebar = document.querySelector('.sidebar');
     sidebar.classList.toggle('open');
   }
 
-  // Event listener for the sidebar toggle button
+  
   const sidebarToggle = document.querySelector('.sidebar-toggle');
   sidebarToggle.addEventListener('click', toggleSidebar);
 });
