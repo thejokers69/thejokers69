@@ -1,12 +1,12 @@
 # _data/navigation.yml
 navigation:
-  - name: Profile
-    link: /profile/
-  - name: About
-    link: /about-me/
-  - name: Skills
-    link: /skills/
-  - name: Projects
-    link: /projects/
-  - name: Contact
-    link: /contact/
+  - link: /profile/
+    name: Profile
+  - link: /about-me/
+    name: About
+  - link: /skills/
+    name: Skills
+  - link: /projects/
+    name: Projects
+  - link: /contact/
+    name: Contact

@@ -1,18 +1,23 @@
 [![roadmap.sh](https://roadmap.sh/card/tall/67a29f6ef863343482fe2f28?variant=dark)](https://roadmap.sh)
+
 ### 👨‍💻 About Me
+
 - 🎓 I’m a second-year Computer Engineering student at Mundiapolis University.
 - 🌱 Currently on break for my internship in fruit grading.
 - 🔍 I’m particularly interested in **Machine Learning** and **Web Development**.
 - 🎶 Outside of tech, I enjoy long drives, relaxing on the beach, and listening to piano music.
 
 ### 🔧 Skills & Technologies
+
 - **Languages**: Python, JavaScript, Node.js, Spring Boot, Java, HTML, CSS, PHP
 - **Frameworks & Libraries**: React (currently learning), Django, TensorFlow
 - **Tools**: GitHub, Git, iTerm, Neovim, VS Code, IntelliJ, Android Studio, Docker, Notion
 - **Databases & Cloud**: MySQL, PostgreSQL, MongoDB, MySQL Workbench, Firebase (currently learning)
 
 ### 🌟 Projects
+
 Here are some of the projects I’ve worked on:
+
 - [**Real-Time IoT Monitoring System**](https://github.com/thejokers69/Dockerized-IoT-Dataflow.git):  
   Dockerized data pipeline for sensor data visualization. Optimized for real-time processing of 100+ data points/sec.  
   *Tech Stack*: Docker, MQTT, InfluxDB, Grafana
@@ -28,7 +33,9 @@ Here are some of the projects I’ve worked on:
   *Ce que j'ai appris*: Maîtrise d'async/await et gestion des erreurs.
 
 ### 🤝 Contributions
+
 I’m currently focusing on my own projects and learning, but I look forward to getting more involved in open-source communities and contributing to collaborative projects.
 
 ### 📫 Contact Information
+
 For more about me, check out my [Linktree](https://linktr.ee/MohamedLakssir) and download my [Résumé](https://link-to-your-resume.pdf).
