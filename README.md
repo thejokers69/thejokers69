@@ -1,12 +1,14 @@
 [![roadmap.sh](https://roadmap.sh/card/tall/67a29f6ef863343482fe2f28?variant=dark)](https://roadmap.sh)
 
 ### 👨‍💻 About Me
+
 - 🎓 I’m a second-year Computer Engineering student at Mundiapolis University, currently interning at **Nextronic** and **ABA Technology** while pursuing my studies.
 - 🌱 At Nextronic, I’m building a camera configuration app with React and Tailwind CSS. At ABA, I’m developing a task management app for the "Education Digital Twin" system with TypeScript and D3.js.
 - 🔍 Passionate about crafting intuitive web solutions and visualizing data with ML and modern tech stacks.
 - 🎶 Outside of tech, I enjoy long drives, relaxing on the beach, and listening to piano music.
 
 ### 🔧 Skills & Technologies
+
 - **Languages**: Python, JavaScript, TypeScript, Node.js, Spring Boot, Java, HTML, CSS, PHP
 - **Frameworks & Libraries**: React, Django, TensorFlow, D3.js, ApexCharts, Tailwind CSS, ShadCN-UI
 - **Tools**: GitHub, Git, Vite, SVGR, pnpm, Neovim, VS Code, IntelliJ, Docker, Notion
@@ -14,6 +16,7 @@
 - **Currently Mastering**: React Router, `react-hook-form`, and advanced D3.js visualizations
 
 ### 🌟 Projects
+
 Here are some of my standout projects:
 
 - **[Camera Configurator](https://github.com/thejokers69/NextCor-camera-Configurator.git)** *(Nextronic Internship)*  
@@ -47,11 +50,14 @@ Here are some of my standout projects:
   *Takeaway*: *Streamlined data insights with clean code.*
 
 ### 🤝 Contributions
+
 I’m sharpening my skills on real-world projects at Nextronic and ABA, and I’m eager to dive into open-source collabs. Got a cool idea? Let’s code it up!  
 **[Join me on GitHub](https://github.com/thejokers69)**
 
 ### 📫 Contact Information
+
 Love to talk tech, data viz, or beach vibes? Hit me up!  
+
 - 🌐 [Linktree](https://linktr.ee/MohamedLakssir)  
 - 📄 [Résumé](https://drive.google.com/file/d/178SSUX4DYWFuUmVl5LgS98bGfGxi-9c2/view?usp=sharing)  
 - 💻 [GitHub](https://github.com/thejokers69)
