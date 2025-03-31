@@ -2,10 +2,16 @@
 
 ### 👨‍💻 About Me
 
-- 🎓 I’m a second-year Computer Engineering student at Mundiapolis University, currently interning at **Nextronic** and **ABA Technology** while pursuing my studies.
-- 🌱 At Nextronic, I’m building a camera configuration app with React and Tailwind CSS. At ABA, I’m developing a task management app for the "Education Digital Twin" system with TypeScript and D3.js.
+- 🎓 I'm a second-year Computer Engineering student at Mundiapolis University, currently interning at **Nextronic** and **ABA Technology** while pursuing my studies.
+- 🌱 At Nextronic, I'm building a camera configuration app with React and Tailwind CSS. At ABA, I'm developing a task management app for the "Education Digital Twin" system with TypeScript and D3.js.
 - 🔍 Passionate about crafting intuitive web solutions and visualizing data with ML and modern tech stacks.
 - 🎶 Outside of tech, I enjoy long drives, relaxing on the beach, and listening to piano music.
+
+### 🐱 My Virtual Pet
+
+[![#30NitesOfCode](https://www.codedex.io/api/petStatus?user=Thejokers69ML)](https://www.codedex.io/@Thejokers69ML/30-nites-of-code)
+
+Check out my progress on the #30NitesOfCode challenge! [View my journey](https://www.codedex.io/@Thejokers69ML/30-nites-of-code)
 
 ### 🔧 Skills & Technologies
 
@@ -51,7 +57,7 @@ Here are some of my standout projects:
 
 ### 🤝 Contributions
 
-I’m sharpening my skills on real-world projects at Nextronic and ABA, and I’m eager to dive into open-source collabs. Got a cool idea? Let’s code it up!  
+I'm sharpening my skills on real-world projects at Nextronic and ABA, and I'm eager to dive into open-source collabs. Got a cool idea? Let's code it up!  
 **[Join me on GitHub](https://github.com/thejokers69)**
 
 ### 📫 Contact Information
