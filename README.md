@@ -103,12 +103,6 @@ timeline
          : Mastering TypeScript & D3.js for Dynamic Visualizations
 ```
 
-### 📝 Latest Articles & Notes
-
-- [Setting Up a Dockerized IoT Pipeline](https://dev.to) - How I built a scalable IoT monitoring system
-- [Implementing RAG in a Banking Chatbot](https://medium.com) - Reducing query resolution time with Retrieval Augmented Generation
-- [TypeScript Best Practices](https://hashnode.com) - Lessons learned from building a task management system
-
 ### 🌟 Projects
 
 *(Private) Repo: Camera Configurator and Task Manager for Education Digital Twin.*
