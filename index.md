@@ -12,7 +12,7 @@ keywords: "Mohamed Lakssir, TheJokers69, portfolio, ingénierie, Machine Learnin
 
 <div class="hero">
   <img
-  src="/assets/images/Logo-Of-TheJokerML.jpg"
+  src="{{ '/assets/images/Logo-Of-TheJokerML.jpg' | relative_url }}"
   alt="Mohamed Lakssir" class="profile-pic">
   <h1>
   Mohamed Lakssir
@@ -23,7 +23,7 @@ keywords: "Mohamed Lakssir, TheJokers69, portfolio, ingénierie, Machine Learnin
   Étudiant en ingénierie informatique | Passionné par le ML et le web
   </p>
   <a
-  href="/projects"
+  href="{{ '/projects' | relative_url }}"
   class="cta-button">
   Voir mes projets
   </a>
