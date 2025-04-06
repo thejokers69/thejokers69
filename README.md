@@ -26,6 +26,89 @@
 
 Check out my progress on the #30NitesOfCode challenge! [View my journey](https://www.codedex.io/@Thejokers69ML/30-nites-of-code)
 
+### 🚀 Learning Journey
+
+```mermaid
+timeline
+    title My Professional Journey
+    2017 : Started Web Development Journey
+         : First internships at NEXTRONIC and Eclipse Casablanca
+    2018 : Database Development at Casablanca D'Informatique
+         : Built first full-stack application
+    2020 : Scientific Baccalaureate
+         : Started focusing on modern web technologies
+    2021 : Began Preparatory Engineering Classes
+         : Explored cloud technologies
+    2023 : Started Computer Engineering Program
+         : Mastered containerization with Docker
+    2024 : HCIA-Cloud Computing Certification
+         : Full-Stack Developer Internship at Mascir
+         : Built IoT Pipeline handling 100+ data points/sec
+    2025 : Cloud/Web Development Internship (Current)
+         : Working on scalable cloud solutions
+         : Mastering DevOps practices
+```
+
+### 🌟 Projects
+
+*(Private) Repo: Camera Configurator and Task Manager for Education Digital Twin.*
+
+Here are some of my standout projects:
+
+- **[Real-Time IoT Monitoring System](https://github.com/thejokers69/Dockerized-IoT-Dataflow)**  
+  Dockerized pipeline for sensor data visualization, handling 100+ data points/sec.  
+  *Tech Stack*: Docker, MQTT, InfluxDB, Grafana  
+  *Metrics*: Reduced setup time by 40%, improved data processing efficiency by 25%  
+  *Takeaway*: *Mastered real-time data pipelines for IoT scalability.*  
+  
+- **[AI-Powered Banking Chatbot](https://github.com/thejokers69/E-bank-Chatbot)**  
+  Spring MVC chatbot with RAG integration, cutting query resolution time by 15%.  
+  *Tech Stack*: Java, Spring MVC, TensorFlow, RAG  
+  *Metrics*: 15% faster customer query resolution, 90% accuracy in document analysis  
+  *Takeaway*: *Blended AI with user-facing apps.*
+
+- **[Travel Reservation API](https://github.com/thejokers69/travel-reservation-api)**  
+  REST API for travel bookings with automated pricing logic.  
+  *Tech Stack*: Node.js, Express, MongoDB  
+  *Metrics*: Handles 200+ concurrent requests, 99.5% uptime  
+  *Takeaway*: *Improved API efficiency with middleware.*
+
+- **[Data Analyzer](https://github.com/thejokers69/analyseur_donnees)**  
+  Django app for crunching data files with visualizations like heatmaps.  
+  *Tech Stack*: Python, Django, Pandas, Seaborn  
+  *Metrics*: Processes datasets up to 500MB with optimized memory usage  
+  *Takeaway*: *Streamlined data insights with clean code.*
+
+### 🛠️ Code Quality Practices
+
+I'm committed to maintaining high-quality code in all my projects:
+
+- **Testing**: Implementing unit tests with Jest, PyTest, and JUnit
+- **CI/CD**: Using GitHub Actions for automated testing and deployment
+- **Documentation**: Detailed READMEs, inline comments, and API documentation
+- **Code Reviews**: Actively seeking feedback through pull requests
+- **Performance**: Optimizing for speed and resource efficiency
+
+### 🤝 Contributions
+
+I'm sharpening my skills on real-world projects and I'm eager to dive into open-source collabs. Got a cool idea? Let's code it up!  
+**[Join me on GitHub](https://github.com/thejokers69)**
+
+I'm particularly interested in contributing to:
+
+- Data visualization libraries
+- React/TypeScript tooling
+- Developer productivity tools
+
+### 📫 Contact Information
+
+Love to talk tech, data viz, or beach vibes? Hit me up!  
+
+- 🌐 [Linktree](https://linktr.ee/MohamedLakssir) ![Linktree](https://img.shields.io/badge/linktree-39E09B?style=for-the-badge&logo=linktree&logoColor=white)
+- 💻 [GitHub](https://github.com/thejokers69) ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+- 🔗 [Portfolio](https://www.thejokers69.tech) ![Portfolio](https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white)
+- 📧 [Email](mailto:contact@thejokers69.tech) ![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)
+
 ### 🔧 Skills & Technologies
 
 #### Languages
@@ -86,79 +169,3 @@ Check out my progress on the #30NitesOfCode challenge! [View my journey](https:/
 
 ![FreeCodeCamp](https://img.shields.io/badge/FreeCodeCamp-0A0A23?style=for-the-badge&logo=freecodecamp&logoColor=white) Responsive Web Design
 ![Coursera](https://img.shields.io/badge/Coursera-0056D2?style=for-the-badge&logo=Coursera&logoColor=white) Machine Learning Foundations
-
-### 🚀 Learning Journey
-
-```mermaid
-timeline
-    title My Tech Journey
-    2022 : Started Computer Engineering
-         : First React Project - Task Tracker App with Context API
-    2023 : Learned Docker & IoT
-         : Built Real-Time IoT Pipeline handling 100+ data points/sec 
-    2024 : Mascir Internship - Education Digital Twin Project
-         : Implemented RAG-based Chat Interface with 15% faster query resolution
-    2025 : Learning Advanced Data Visualization
-         : Exploring AI Integration with Web Applications
-         : Mastering TypeScript & D3.js for Dynamic Visualizations
-```
-
-### 🌟 Projects
-
-*(Private) Repo: Camera Configurator and Task Manager for Education Digital Twin.*
-
-Here are some of my standout projects:
-
-- **[Real-Time IoT Monitoring System](https://github.com/thejokers69/Dockerized-IoT-Dataflow)**  
-  Dockerized pipeline for sensor data visualization, handling 100+ data points/sec.  
-  *Tech Stack*: Docker, MQTT, InfluxDB, Grafana  
-  *Metrics*: Reduced setup time by 40%, improved data processing efficiency by 25%  
-  *Takeaway*: *Mastered real-time data pipelines for IoT scalability.*  
-  
-- **[AI-Powered Banking Chatbot](https://github.com/thejokers69/E-bank-Chatbot)**  
-  Spring MVC chatbot with RAG integration, cutting query resolution time by 15%.  
-  *Tech Stack*: Java, Spring MVC, TensorFlow, RAG  
-  *Metrics*: 15% faster customer query resolution, 90% accuracy in document analysis  
-  *Takeaway*: *Blended AI with user-facing apps.*
-
-- **[Travel Reservation API](https://github.com/thejokers69/travel-reservation-api)**  
-  REST API for travel bookings with automated pricing logic.  
-  *Tech Stack*: Node.js, Express, MongoDB  
-  *Metrics*: Handles 200+ concurrent requests, 99.5% uptime  
-  *Takeaway*: *Improved API efficiency with middleware.*
-
-- **[Data Analyzer](https://github.com/thejokers69/analyseur_donnees)**  
-  Django app for crunching data files with visualizations like heatmaps.  
-  *Tech Stack*: Python, Django, Pandas, Seaborn  
-  *Metrics*: Processes datasets up to 500MB with optimized memory usage  
-  *Takeaway*: *Streamlined data insights with clean code.*
-
-### 🛠️ Code Quality Practices
-
-I'm committed to maintaining high-quality code in all my projects:
-
-- **Testing**: Implementing unit tests with Jest, PyTest, and JUnit
-- **CI/CD**: Using GitHub Actions for automated testing and deployment
-- **Documentation**: Detailed READMEs, inline comments, and API documentation
-- **Code Reviews**: Actively seeking feedback through pull requests
-- **Performance**: Optimizing for speed and resource efficiency
-
-### 🤝 Contributions
-
-I'm sharpening my skills on real-world projects and I'm eager to dive into open-source collabs. Got a cool idea? Let's code it up!  
-**[Join me on GitHub](https://github.com/thejokers69)**
-
-I'm particularly interested in contributing to:
-
-- Data visualization libraries
-- React/TypeScript tooling
-- Developer productivity tools
-
-### 📫 Contact Information
-
-Love to talk tech, data viz, or beach vibes? Hit me up!  
-
-- 🌐 [Linktree](https://linktr.ee/MohamedLakssir) ![Linktree](https://img.shields.io/badge/linktree-39E09B?style=for-the-badge&logo=linktree&logoColor=white)
-- 💻 [GitHub](https://github.com/thejokers69) ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
-- 🔗 [Portfolio](https://thejokers69.tech) ![Portfolio](https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white)
-- 📧 [Email](mailto:contact@thejokers69.tech) ![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)
