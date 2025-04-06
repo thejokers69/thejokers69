@@ -1,48 +1,117 @@
-# Dependabot configuration file for thejokers69/thejokers69
-# Automated dependency updates for Ruby/Bundler (Jekyll), GitHub Actions, and npm
+# Comprehensive Dependabot configuration for Mohamed Lakssir's portfolio
+# Manages dependencies for Jekyll, GitHub Actions, and potential JavaScript packages
 
 version: 2
 updates:
-  # Keep Ruby/Bundler dependencies up to date (for Jekyll)
+  # Ruby/Bundler dependencies (Jekyll and plugins)
   - package-ecosystem: "bundler"
     directory: "/"
     schedule:
       interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Africa/Casablanca"
     open-pull-requests-limit: 5
     labels:
       - "dependencies"
       - "ruby"
+      - "jekyll"
     commit-message:
-      prefix: "📦"
+      prefix: "📦 gems"
       include: "scope"
+    assignees:
+      - "thejokers69"
+    reviewers:
+      - "thejokers69"
+    groups:
+      jekyll-packages:
+        patterns:
+          - "jekyll"
+          - "jekyll-*"
+    versioning-strategy: increase-if-necessary
+    # Only allow security updates for major versions
+    ignore:
+      - dependency-name: "*"
+        update-types: ["version-update:semver-major"]
 
-  # Keep GitHub Actions up to date
+  # GitHub Actions workflows
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "monthly"
-    open-pull-requests-limit: 5
+      day: "monday"
+      time: "09:00"
+      timezone: "Africa/Casablanca"
+    open-pull-requests-limit: 3
     labels:
       - "dependencies"
       - "github-actions"
+      - "ci"
     commit-message:
-      prefix: "🔧"
+      prefix: "🔧 ci"
       include: "scope"
+    assignees:
+      - "thejokers69"
+    groups:
+      actions:
+        patterns:
+          - "actions/*"
+    # Allow all updates for GitHub Actions
+    allow:
+      - dependency-type: "all"
 
-  # For JavaScript/npm dependencies (if any)
+  # JavaScript/npm dependencies (for future development)
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 5
+      interval: "monthly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Africa/Casablanca"
+    open-pull-requests-limit: 3
     labels:
       - "dependencies"
       - "javascript"
+      - "frontend"
+    commit-message:
+      prefix: "📦 npm"
+      include: "scope"
+    assignees:
+      - "thejokers69"
+    # Security updates get priority
+    security-updates-only: false
+    # For patch and minor updates, group them to minimize PRs
+    groups:
+      development-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "minor"
+          - "patch"
+      production-dependencies:
+        dependency-type: "production"
+        update-types:
+          - "minor"
+          - "patch"
+    versioning-strategy: auto
+    # Ignore major updates that might break things
     ignore:
-      # Ignore major version updates for these packages
-      # as they might require significant changes
       - dependency-name: "*"
         update-types: ["version-update:semver-major"]
+
+  # CSS dependencies (if you add any in the future)
+  - package-ecosystem: "npm"
+    directory: "/assets/css"
+    schedule:
+      interval: "monthly"
+      time: "09:00"
+      timezone: "Africa/Casablanca"
+    open-pull-requests-limit: 2
+    labels:
+      - "dependencies"
+      - "css"
+      - "styling"
     commit-message:
-      prefix: "📦"
+      prefix: "💄 style"
       include: "scope"
+    # Only run if package.json exists in this directory
+    rebase-strategy: "auto"
