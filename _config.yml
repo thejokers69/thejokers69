@@ -3,7 +3,7 @@ title: "Mohamed Lakssir | TheJokers69"
 description: "Computer Engineering Student & Full-Stack Developer"
 baseurl: ""
 url: "https://thejokers69.tech"
-theme: jekyll-theme-minimal
+# Removed theme specification to use local layouts
 
 sass:
   sass_dir: assets/css

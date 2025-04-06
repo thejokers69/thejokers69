@@ -1,8 +1,24 @@
 <!-- /workspaces/thejokers69/_includes/head.html -->
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>{{ page.title | default: site.title }}</title>
+<link rel="icon" type="image/x-icon" href="{{
+"/assets/images/Logo-Of-TheJokerML.ico" | relative_url }}">
+
 <link
   href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@300;500;700&display=swap"
   rel="stylesheet"
 />
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+  rel="stylesheet"
+/>
+
+<!-- CSS Styles -->
+<link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+
+<!-- SEO Meta -->
 <meta name="description" content="{{ site.description }}" />
 <meta property="og:title" content="{{ page.title | default: site.title }}" />
 <meta property="og:description" content="{{ site.description }}" />
@@ -11,3 +27,19 @@
 <meta property="og:image" content="{{ site.url }}/assets/images/og-image.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="theme-color" content="#1e90ff" />
+
+<!-- Google tag (gtag.js) -->
+<script
+  async
+  src="https://www.googletagmanager.com/gtag/js?id=G-8DEQ7LX16N"
+></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag("js", new Date());
+  gtag("config", "G-8DEQ7LX16N");
+</script>
+
+{% seo %}
