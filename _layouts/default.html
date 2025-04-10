@@ -1,4 +1,11 @@
-<!-- /workspaces/thejokers69/_layouts/default.html -->
+<!--
+/**
+ * @ai-context Main layout template for the thejokers69 portfolio
+ * @project thejokers69
+ * @description Primary layout wrapping all pages, includes head, header, content, and footer
+ * @author Mohamed Lakssir (@TheJokers69)
+ */
+-->
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
@@ -6,7 +13,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1e90ff">
-    <!-- Favicon et multi-size (optionnel) -->
+    <meta name="description" content="{{ site.description | default: 'Portfolio of Mohamed Lakssir, a Computer Engineering student and Full-Stack Developer.' }}">
+    <!-- Favicon and multi-size icons -->
     <link rel="icon" type="image/x-icon" href="{{ "/assets/images/Logo-Of-TheJokerML.ico" | relative_url }}">
 
     <!-- Google tag (gtag.js) -->
@@ -22,7 +30,7 @@
     {% seo %}
 
     <!-- CSS Styles -->
-    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/style.scss" | relative_url }}">
 
     <!-- FontAwesome -->
     <script src="https://kit.fontawesome.com/e038b63c00.js" crossorigin="anonymous"></script>
@@ -37,7 +45,7 @@
       </header>
 
       <!-- Main Content -->
-      <main class="main-content">
+      <main class="main-content" id="main-content">
         {{ content }}
       </main>
 

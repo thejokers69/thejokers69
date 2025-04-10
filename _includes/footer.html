@@ -1,23 +1,32 @@
-<!-- /workspaces/thejokers69/_includes/footer.html -->
+<!--
+/**
+ * @ai-context Footer component for the thejokers69 portfolio
+ * @project thejokers69
+ * @description Contains social links, copyright, tech stack icons, and personal info
+ * @author Mohamed Lakssir (@TheJokers69)
+ */
+-->
 <footer class="site-footer">
   <div class="wrapper">
     <div class="footer-content">
-      <div class="social-links">
+      <div class="social-links" aria-label="Social media links">
         <a
           href="https://github.com/thejokers69"
           target="_blank"
-          aria-label="GitHub"
+          rel="noopener noreferrer"
+          aria-label="GitHub Profile"
         >
           <i class="fab fa-github"></i>
         </a>
         <a
           href="https://www.linkedin.com/in/mohamed-lakssir-b6b4301a4"
           target="_blank"
-          aria-label="LinkedIn"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn Profile"
         >
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="mailto:mohamed.lakssir@gmail.com" aria-label="Email">
+        <a href="mailto:mohamed.lakssir@gmail.com" aria-label="Email Me">
           <i class="fas fa-envelope"></i>
         </a>
       </div>
@@ -26,7 +35,9 @@
         <a
           href="https://drive.google.com/file/d/178SSUX4DYWFuUmVl5LgS98bGfGxi-9c2/view?usp=sharing"
           target="_blank"
-          >Download Résumé</a
+          rel="noopener noreferrer"
+          class="resume-link"
+          >Download Résumé <i class="fas fa-file-download" aria-hidden="true"></i></a
         >
       </div>
 
@@ -36,10 +47,11 @@
 
       <div class="tech-stack">
         <span>Powered by:</span>
-        <div class="stack-icons">
+        <div class="stack-icons" aria-label="Technologies used">
           <i class="fab fa-docker" title="Docker"></i>
           <i class="fab fa-js-square" title="JavaScript"></i>
           <i class="fab fa-python" title="Python"></i>
+          <i class="fas fa-gem" title="Jekyll"></i>
         </div>
       </div>
       <div class="identity">

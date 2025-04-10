@@ -1,10 +1,28 @@
 # thejokers69/_config.yml
+# @ai-context Main configuration file for the Jekyll-based portfolio
+# @project thejokers69
+# @description Controls site settings, plugins, and build configuration
+# @author Mohamed Lakssir (@TheJokers69)
+
 title: "Mohamed Lakssir | TheJokers69"
-description: "Computer Engineering Student & Full-Stack Developer"
+description: "Computer Engineering Student & Full-Stack Developer specializing in React, Spring Boot, and Data Visualization"
 baseurl: "/thejokers69"
 url: "https://thejokers69.github.io"
 # Using local layouts rather than a gem-based theme
 theme: jekyll-theme-minimal
+
+# Social links for SEO and metadata
+author:
+  name: Mohamed Lakssir
+  email: contact@thejokers69.tech
+  github: thejokers69
+  linkedin: mohamed-lakssir-b6b4301a4
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+future: false
+show_drafts: false
 
 sass:
   sass_dir: assets/css
@@ -17,6 +35,27 @@ plugins:
 collections:
   pages:
     output: true
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+# Metadata for Jekyll SEO Tag plugin
+lang: en_US
+locale: en_US
+logo: /assets/images/Logo-Of-TheJokerML.jpg
+social:
+  name: Mohamed Lakssir
+  links:
+    - https://github.com/thejokers69
+    - https://www.linkedin.com/in/mohamed-lakssir-b6b4301a4
+
+# Performance optimizations
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [development]
 
 cache:
   enabled: true

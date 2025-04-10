@@ -1,4 +1,12 @@
 <!-- /Users/thejoker/Documents/GitHub/thejokers69/_includes/header.html -->
+<!--
+/**
+ * @ai-context Header component for the thejokers69 portfolio
+ * @project thejokers69
+ * @description Contains site title, navigation menu, and theme toggle button
+ * @author Mohamed Lakssir (@TheJokers69)
+ */
+-->
 <header class="site-header">
   <div class="wrapper">
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
@@ -11,7 +19,7 @@
           {% for item in site.data.navigation %}
             {% assign current_url = page.url | remove: 'index.html' | strip | prepend: '/' | append: '/' %}
             {% unless current_url == item.link %}
-              <a class="page-link" href="{{ item.link | relative_url }}">{{ item.name }}</a>
+              <a class="page-link hover-underline" href="{{ item.link | relative_url }}" {% if current_url contains item.link %}aria-current="page"{% endif %}>{{ item.name }}</a>
             {% endunless %}
           {% endfor %}
         {% else %}
@@ -19,8 +27,9 @@
         {% endif %}
       </div>
     </nav>
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-      <span class="sun-moon"></span>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme" aria-pressed="true">
+      <span class="sun-moon" aria-hidden="true"></span>
+      <span class="sr-only">Toggle theme</span>
     </button>
   </div>
 </header>

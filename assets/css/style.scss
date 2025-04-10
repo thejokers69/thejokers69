@@ -1,5 +1,9 @@
----
----
+/**
+ * @ai-context Main stylesheet for the thejokers69 portfolio
+ * @project thejokers69
+ * @description Handles theme styling, responsive design, and animations
+ * @author Mohamed Lakssir (@TheJokers69)
+ */
 
 /* Global Styles */
 html {
@@ -353,3 +357,37 @@ body.light .site-footer {
 .profile-pic { width: 150px; border-radius: 50%; margin-bottom: 1rem; }
 .cta-button { display: inline-block; padding: 10px 20px; background: var(--primary); color: #fff; border-radius: 5px; }
 .cta-button:hover { background: var(--secondary); text-decoration: none; }
+
+/* Accessibility Enhancements */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Focus styles for keyboard navigation */
+a:focus, button:focus, input:focus, textarea:focus, select:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Skip to content link - appears when tabbed to */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--primary);
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
