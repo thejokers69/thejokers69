@@ -1,5 +1,7 @@
 # Mohamed Lakssir | Full-Stack Developer
 
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=thejokers69&label=Profile%20views&color=0e75b6&style=flat" alt="thejokers69" /> </p>
+
 [![GitHub followers](https://img.shields.io/github/followers/thejokers69?style=social)](https://github.com/thejokers69)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/mohamed-lakssir-b6b4301a4/)
 [![Roadmap.sh](https://roadmap.sh/card/tall/67a29f6ef863343482fe2f28?variant=dark)](https://roadmap.sh)
