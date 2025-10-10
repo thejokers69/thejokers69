@@ -5,7 +5,7 @@
 [![GitHub followers](https://img.shields.io/github/followers/thejokers69?style=social)](https://github.com/thejokers69)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/mohamed-lakssir-b6b4301a4/)
 [![Roadmap.sh](https://roadmap.sh/card/tall/67a29f6ef863343482fe2f28?variant=dark)](https://roadmap.sh)
-[![Portfolio](https://img.shields.io/badge/Portfolio-thejokers69.tech-green)](https://thejokers69.tech)
+[![Portfolio](https://img.shields.io/badge/Portfolio-mohamedlakssirt.tech-green)](https://mohamedlakssirt.tech)
 
 > Building intuitive digital experiences with React, TypeScript, and data visualization | Making complex data understandable
 
@@ -108,8 +108,8 @@ Love to talk tech, data viz, or beach vibes? Hit me up!
 
 - 🌐 [Linktree](https://linktr.ee/MohamedLakssir) ![Linktree](https://img.shields.io/badge/linktree-39E09B?style=for-the-badge&logo=linktree&logoColor=white)
 - 💻 [GitHub](https://github.com/thejokers69) ![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
-- 🔗 [Portfolio](https://www.thejokers69.tech) ![Portfolio](https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white)
-- 📧 [Email](mailto:contact@thejokers69.tech) ![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)
+- 🔗 [Portfolio](https://www.mohamedlakssirt.tech) ![Portfolio](https://img.shields.io/badge/Portfolio-255E63?style=for-the-badge&logo=About.me&logoColor=white)
+- 📧 [Email](mailto:contact@mohamedlakssirt.tech) ![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)
 
 ### 🔧 Skills & Technologies
 
