@@ -11,7 +11,7 @@
 
 ## 👨‍💻 About **Me**
 
-- 🎓 I'm a second-year Computer Engineering student at Mundiapolis University, currently interning while pursuing my studies.
+- 🎓 I'm a third-year Computer Engineering student at Mundiapolis University, currently interning while pursuing my studies.
 - 🌱 I'm building a camera configuration app with React and Tailwind CSS (reducing setup time by 20%) and have completed a task management app for the "Education Digital Twin" system using TypeScript and D3.js.
 - 🔍 Passionate about crafting intuitive web solutions and visualizing data with ML and modern tech stacks, focusing on real-time data analysis and visualization.
 - 🎶 Outside of tech, I enjoy long drives, relaxing on the beach, and listening to piano music.
