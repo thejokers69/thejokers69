@@ -4,7 +4,7 @@
 
 [![GitHub followers](https://img.shields.io/github/followers/thejokers69?style=social)](https://github.com/thejokers69)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/mohamed-lakssir-b6b4301a4/)
-[![Roadmap.sh](https://roadmap.sh/card/tall/67a29f6ef863343482fe2f28?variant=dark)](https://roadmap.sh)
+[![roadmap.sh](https://roadmap.sh/card/tall/67a29f6ef863343482fe2f28?variant=dark&roadmaps=full-stack%2Cfrontend%2Ctypescript%2Cbackend)](https://roadmap.sh)
 [![Portfolio](https://img.shields.io/badge/Portfolio-mohamedlakssirt.tech-green)](https://mohamedlakssirt.tech)
 
 > Building intuitive digital experiences with React, TypeScript, and data visualization | Making complex data understandable
