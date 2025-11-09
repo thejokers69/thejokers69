@@ -1,9 +1,9 @@
-{
+// {
   
-  "name": "copilot's the joker!",
-  "customizations": {
-    "vscode": {
-      "extensions": ["GitHub.copilot"]
-    }
-  }
-}
+//   "name": "copilot's the joker!",
+//   "customizations": {
+//     "vscode": {
+//       "extensions": ["GitHub.copilot"]
+//     }
+//   }
+// }
