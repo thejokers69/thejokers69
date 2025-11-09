@@ -6,18 +6,58 @@ permalink: /skills/
 
 ## Skills & Technologies
 
-- **Languages**: Java, Python, JavaScript, SQL, HTML/CSS
-- **Frameworks**:
-  - Backend: Spring MVC, Spring Boot, Express.js, Django
-  - Frontend: Angular, React, Thymeleaf
-  - AI/ML: TensorFlow, RAG architectures
-- **Tools & Databases**:
-  - DevOps: Docker, Git, CI/CD
-  - Databases: MySQL, MongoDB, PostgreSQL, InfluxDB
-  - IoT: MQTT, Grafana, Time-Series Data
-  - Testing: Postman, JUnit
-- **Security**: JWT, Spring Security, OAuth2
-- **Architectures**:
-  - RESTful APIs • Microservices • IoT Pipelines
-  - Real-time Data Processing • MVC Pattern
-  - Dependency Injection (IoC) • Secure SDLC
+A comprehensive overview of my technical expertise and tools I work with.
+
+### Languages
+
+- **Python** - Advanced
+- **TypeScript** - Advanced
+- **JavaScript** - Advanced
+- **Solidity** - Beginner
+
+### Frontend
+
+- **React** - Expert
+- **React Router** - Advanced
+- **Next.js** - Advanced
+- **Tailwind CSS** - Expert
+- **shadcn/ui** - Advanced
+- **Svelte** - Intermediate
+- **Vite** - Expert
+- **SVGR** - Advanced
+- **React Context** - Advanced
+
+### Backend
+
+- **Node.js** - Expert
+- **Express.js** - Advanced
+- **Django** - Advanced
+- **Spring Boot** - Advanced
+- **MongoDB** - Advanced
+- **MySQL** - Advanced
+
+### DevOps
+
+- **Docker** - Expert
+- **Git** - Expert
+- **GitHub** - Expert
+- **GitKraken** - Advanced
+- **JWT** - Advanced
+- **GitHub Pages** - Advanced
+- **Vercel** - Advanced
+- **AWS** - Intermediate
+- **Digital Ocean** - Intermediate
+- **Grafana** - Intermediate
+
+### Tools
+
+- **ESLint** - Advanced
+- **Prettier** - Advanced
+- **iTerm2** - Expert
+- **Homebrew** - Expert
+- **Figma** - Intermediate
+
+### Operating Systems
+
+- **macOS** - Expert
+- **Ubuntu** - Advanced

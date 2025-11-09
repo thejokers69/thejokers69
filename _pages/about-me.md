@@ -6,7 +6,7 @@ permalink: /about-me/
 
 ## Mohamed Lakssir
 
-Hello! I'm a second-year Computer Engineering student at Mundiapolis
+Hello! I'm a Third-year Computer Engineering student at Mundiapolis
 University passionate about building intelligent systems and web solutions.
 
 **Digital Identity:**
