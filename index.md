@@ -27,8 +27,11 @@ keywords: "Mohamed Lakssir, TheJokers69, portfolio, ingénierie, Machine Learnin
   </a>
 </div>
 
-<div class="roadmap-card" style="margin: 2rem 0; text-align: center;">
+<div class="roadmap-card">
   <a href="https://roadmap.sh" target="_blank" rel="noopener noreferrer">
-    <img src="https://roadmap.sh/card/tall/67a29f6ef863343482fe2f28?variant=dark" alt="roadmap.sh progress card" style="max-width: 100%; height: auto;">
+    <img
+      src="https://roadmap.sh/card/tall/67a29f6ef863343482fe2f28?variant=dark"
+      alt="roadmap.sh progress card"
+    >
   </a>
 </div>
