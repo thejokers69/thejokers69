@@ -60,3 +60,9 @@ compress_html:
 cache:
   enabled: true
   duration: 3600
+
+# PostHog Analytics Configuration
+# API key is loaded from POSTHOG_API_KEY environment variable via _plugins/posthog_config.rb
+posthog:
+  api_key: "" # Set via POSTHOG_API_KEY environment variable
+  host: "https://eu.i.posthog.com"
