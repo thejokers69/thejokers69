@@ -39,7 +39,7 @@ jobs:
           sudo apt-get install -y build-essential
       - name: Setup Ruby
         # https://github.com/ruby/setup-ruby/releases/tag/v1.207.0
-        uses: ruby/setup-ruby@v1.263.0
+        uses: ruby/setup-ruby@v1.267.0
         with:
           ruby-version: "3.1" # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
