@@ -8,8 +8,8 @@ title: "Mohamed Lakssir | TheJokers69"
 description: "Computer Engineering Student & Full-Stack Developer specializing in React, Spring Boot, and Data Visualization"
 baseurl: "/thejokers69"
 url: "https://thejokers69.github.io"
-# Using local layouts rather than a gem-based theme
-theme: jekyll-theme-minimal
+# Using local layouts - theme removed to use custom layouts
+# theme: jekyll-theme-minimal
 
 # Social links for SEO and metadata
 author:

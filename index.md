@@ -6,8 +6,6 @@ permalink: /
 keywords: "Mohamed Lakssir, TheJokers69, portfolio, ingénierie, Machine Learning, développement web"
 ---
 
-[![roadmap.sh](https://roadmap.sh/card/tall/67a29f6ef863343482fe2f28?variant=dark)](https://roadmap.sh)
-
 ## Bienvenue sur mon Portfolio
 
 <div class="hero">
@@ -28,10 +26,9 @@ keywords: "Mohamed Lakssir, TheJokers69, portfolio, ingénierie, Machine Learnin
   Voir mes projets
   </a>
 </div>
-{% for item in site.data.navigation %}
-  <a
-  href="{{ item.link | relative_url }}"
-  class="page-link">{{ item.name }}</a>
-{% endfor %}
 
-<!-- ...autres contenus ou sections... -->
+<div class="roadmap-card" style="margin: 2rem 0; text-align: center;">
+  <a href="https://roadmap.sh" target="_blank" rel="noopener noreferrer">
+    <img src="https://roadmap.sh/card/tall/67a29f6ef863343482fe2f28?variant=dark" alt="roadmap.sh progress card" style="max-width: 100%; height: auto;">
+  </a>
+</div>
