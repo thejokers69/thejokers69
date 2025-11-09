@@ -21,8 +21,6 @@ updates:
       include: "scope"
     assignees:
       - "thejokers69"
-    reviewers:
-      - "thejokers69"
     groups:
       jekyll-packages:
         patterns:
@@ -79,7 +77,6 @@ updates:
     assignees:
       - "thejokers69"
     # Security updates get priority
-    security-updates-only: false
     # For patch and minor updates, group them to minimize PRs
     groups:
       development-dependencies:

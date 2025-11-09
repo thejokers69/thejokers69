@@ -2,7 +2,8 @@
 
 ## Supported Versions
 
-This portfolio website is built using Jekyll and hosted on GitHub Pages. The following versions are currently supported with security updates:
+This portfolio website is built using Jekyll and hosted on GitHub Pages. The
+following versions are currently supported with security updates:
 
 | Component | Version | Supported          |
 | --------- | ------- | ------------------ |
@@ -20,11 +21,15 @@ The following Ruby gems are used in this project and are kept up-to-date:
 - `jekyll-theme-minimal`
 - `webrick` (~> 1.7)
 
-**Note**: GitHub Pages manages the Jekyll version automatically. For local development, ensure you're using a supported version as specified in the `Gemfile`.
+**Note**: GitHub Pages manages the Jekyll version automatically. For local
+development, ensure you're using a supported version as specified in the
+`Gemfile`.
 
 ## Reporting a Vulnerability
 
-We take security seriously and appreciate your help in keeping this project secure. If you discover a security vulnerability, please follow these guidelines:
+We take security seriously and appreciate your help in keeping this project
+secure. If you discover a security vulnerability, please follow these
+guidelines:
 
 ### How to Report
 
@@ -48,7 +53,8 @@ Please provide the following information in your report:
 - **Acknowledgment**: Within 48 hours of receiving your report
 - **Initial Assessment**: Within 7 days
 - **Status Updates**: Regular updates every 7-14 days until resolution
-- **Resolution**: Depends on severity and complexity, typically within 30 days for critical issues
+- **Resolution**: Depends on severity and complexity, typically within 30 days
+  for critical issues
 
 ### What to Expect
 
@@ -60,7 +66,8 @@ Please provide the following information in your report:
 
 - **If Declined**:
   - You will receive an explanation of why the issue was declined
-  - If it's out of scope, we'll direct you to the appropriate party (e.g., GitHub Pages team)
+  - If it's out of scope, we'll direct you to the appropriate party (e.g.,
+    GitHub Pages team)
 
 ## Scope
 
@@ -68,47 +75,62 @@ Please provide the following information in your report:
 
 The following are considered in scope for security reporting:
 
-- **Jekyll Configuration**: Vulnerabilities in `_config.yml` or Jekyll build process
+- **Jekyll Configuration**: Vulnerabilities in `_config.yml` or Jekyll build
+  process
 - **Dependencies**: Security issues in Ruby gems listed in `Gemfile`
-- **Site Content**: Malicious or compromised content in markdown files, HTML templates, or assets
+- **Site Content**: Malicious or compromised content in markdown files, HTML
+  templates, or assets
 - **Build Process**: Issues in the Jekyll build and deployment workflow
-- **GitHub Actions**: Security issues in CI/CD workflows (`.github/workflows/jekyll.yml`)
-- **Deployment Security**: Vulnerabilities in the deployment process, workflow permissions, or artifact handling
+- **GitHub Actions**: Security issues in CI/CD workflows
+  (`.github/workflows/jekyll.yml`)
+- **Deployment Security**: Vulnerabilities in the deployment process, workflow
+  permissions, or artifact handling
 
 ### Out of Scope
 
 The following are **not** considered in scope:
 
-- **GitHub Pages Infrastructure**: Issues with GitHub Pages hosting platform itself
-- **Third-Party Services**: Vulnerabilities in external services (e.g., GitHub, external APIs)
+- **GitHub Pages Infrastructure**: Issues with GitHub Pages hosting platform
+  itself
+- **Third-Party Services**: Vulnerabilities in external services (e.g., GitHub,
+  external APIs)
 - **Social Engineering**: Phishing attacks or social engineering attempts
 - **Denial of Service**: DoS attacks that don't exploit a code vulnerability
-- **Content Policy Violations**: Spam, harassment, or other content policy issues (report via GitHub's reporting system)
-- **Dependency Vulnerabilities**: Issues in dependencies that are already publicly disclosed and have available patches
+- **Content Policy Violations**: Spam, harassment, or other content policy
+  issues (report via GitHub's reporting system)
+- **Dependency Vulnerabilities**: Issues in dependencies that are already
+  publicly disclosed and have available patches
 
 ## Security Best Practices
 
 ### Dependency Management
 
 - **Regular Updates**: Dependencies are reviewed and updated regularly
-- **Security Advisories**: We monitor RubyGems security advisories and GitHub Dependabot alerts
-- **Version Pinning**: Critical dependencies are pinned to specific versions in `Gemfile`
+- **Security Advisories**: We monitor RubyGems security advisories and GitHub
+  Dependabot alerts
+- **Version Pinning**: Critical dependencies are pinned to specific versions
+  in `Gemfile`
 
 ### Content Security
 
-- **Input Validation**: All user-generated content (if any) is validated and sanitized
-- **No Sensitive Data**: This repository does not contain sensitive credentials, API keys, or personal information
+- **Input Validation**: All user-generated content (if any) is validated and
+  sanitized
+- **No Sensitive Data**: This repository does not contain sensitive
+  credentials, API keys, or personal information
 - **Asset Security**: All assets are reviewed before inclusion
 
 ### GitHub Pages Security
 
 - **HTTPS**: GitHub Pages automatically provides HTTPS for all sites
-- **Content Security Policy**: Consider implementing CSP headers if adding interactive features
-- **Subresource Integrity**: Use SRI hashes for external scripts when applicable
+- **Content Security Policy**: Consider implementing CSP headers if adding
+  interactive features
+- **Subresource Integrity**: Use SRI hashes for external scripts when
+  applicable
 
 ### Deployment Security
 
-This project uses GitHub Actions for automated deployment to GitHub Pages. The following security measures are in place:
+This project uses GitHub Actions for automated deployment to GitHub Pages. The
+following security measures are in place:
 
 - **Workflow Permissions**: The deployment workflow uses minimal required permissions:
   - `contents: read` - Read repository contents
@@ -116,21 +138,28 @@ This project uses GitHub Actions for automated deployment to GitHub Pages. The f
   - `id-token: write` - Required for OIDC authentication
 
 - **Deployment Process**:
-  - **Automated Builds**: All deployments are built in isolated GitHub Actions runners
-  - **Environment Protection**: The `github-pages` environment is protected and requires approval for deployments
-  - **Concurrency Control**: Only one deployment runs at a time to prevent race conditions
+  - **Automated Builds**: All deployments are built in isolated GitHub Actions
+    runners
+  - **Environment Protection**: The `github-pages` environment is protected
+    and requires approval for deployments
+  - **Concurrency Control**: Only one deployment runs at a time to prevent race
+    conditions
   - **Build Verification**: All builds are verified before deployment
 
 - **CI/CD Security**:
-  - **Action Versioning**: GitHub Actions are pinned to specific versions (e.g., `@v5`, `@v4`)
+  - **Action Versioning**: GitHub Actions are pinned to specific versions
+    (e.g., `@v5`, `@v4`)
   - **Dependabot**: Automated dependency updates for GitHub Actions workflows
   - **Workflow Validation**: All workflow changes are reviewed before merging
-  - **Artifact Security**: Build artifacts are stored securely and automatically cleaned up after deployment
+  - **Artifact Security**: Build artifacts are stored securely and automatically
+    cleaned up after deployment
 
 - **Deployment Triggers**:
   - **Automatic**: Deployments trigger on pushes to the `master` branch
-  - **Manual**: Workflow can be manually triggered via `workflow_dispatch` for controlled deployments
-  - **Security Updates**: Critical security updates may trigger immediate deployment after verification
+  - **Manual**: Workflow can be manually triggered via `workflow_dispatch` for
+    controlled deployments
+  - **Security Updates**: Critical security updates may trigger immediate
+    deployment after verification
 
 - **Rollback Procedures**:
   - Previous deployments can be restored via GitHub Pages settings
@@ -158,12 +187,15 @@ Security updates will be:
 - Documented in the repository's commit history
 - Communicated via security advisories if the issue is critical
 - Applied to all supported versions
-- Deployed automatically via GitHub Actions workflow after merging to the `master` branch
+- Deployed automatically via GitHub Actions workflow after merging to the
+  `master` branch
 - Tested in isolated build environments before production deployment
 
 ## Acknowledgments
 
-We appreciate the security research community's efforts to keep open-source projects secure. Security researchers who responsibly disclose vulnerabilities will be credited (unless they prefer to remain anonymous).
+We appreciate the security research community's efforts to keep open-source
+projects secure. Security researchers who responsibly disclose vulnerabilities
+will be credited (unless they prefer to remain anonymous).
 
 ## Contact
 

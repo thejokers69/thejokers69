@@ -44,11 +44,13 @@ body.light {
   --text-dark: #ccd6f6;
   --bg-light: #f8f9fa;
   --text-light: #172a45;
-  --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 * {
-  transition: background-color 0.3s ease, color 0.2s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.2s ease;
 }
 
 /* Header Styles */
@@ -74,7 +76,7 @@ body.light .site-header {
   font-size: 1.8rem;
   font-weight: bold;
   text-decoration: none;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   letter-spacing: -0.05em;
   display: flex;
   flex-direction: column;
@@ -275,7 +277,7 @@ body.light .site-footer {
 }
 
 .hover-underline::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -291,22 +293,26 @@ body.light .site-footer {
 
 /* Card styling for projects */
 .project-card {
-  background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
   backdrop-filter: blur(10px);
   border-radius: 15px;
   padding: 2rem;
   margin: 1rem 0;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
   &:hover {
     transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 8px 15px rgba(0,122,204,0.3);
+    box-shadow: 0 8px 15px rgba(0, 122, 204, 0.3);
   }
 
   /* Animation pour apparition */
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
   &.visible {
     opacity: 1;
     transform: translateY(0);
@@ -335,7 +341,9 @@ body.light .site-footer {
 .neon-button:hover {
   color: #fff;
   background: var(--primary);
-  box-shadow: 0 0 10px var(--primary), 0 0 20px var(--secondary);
+  box-shadow:
+    0 0 10px var(--primary),
+    0 0 20px var(--secondary);
 }
 .neon-button span {
   position: absolute;
@@ -343,20 +351,64 @@ body.light .site-footer {
   background: var(--secondary);
   transition: 0.3s ease;
 }
-.neon-button span:nth-child(1) { top: 0; left: -100%; width: 100%; height: 2px; }
-.neon-button span:nth-child(2) { top: -100%; right: 0; width: 2px; height: 100%; }
-.neon-button span:nth-child(3) { bottom: 0; right: -100%; width: 100%; height: 2px; }
-.neon-button span:nth-child(4) { bottom: -100%; left: 0; width: 2px; height: 100%; }
-.neon-button:hover span:nth-child(1) { left: 0; }
-.neon-button:hover span:nth-child(2) { top: 0; }
-.neon-button:hover span:nth-child(3) { right: 0; }
-.neon-button:hover span:nth-child(4) { bottom: 0; }
+.neon-button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+}
+.neon-button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+}
+.neon-button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+}
+.neon-button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+}
+.neon-button:hover span:nth-child(1) {
+  left: 0;
+}
+.neon-button:hover span:nth-child(2) {
+  top: 0;
+}
+.neon-button:hover span:nth-child(3) {
+  right: 0;
+}
+.neon-button:hover span:nth-child(4) {
+  bottom: 0;
+}
 
 /* Hero Section Styles */
-.hero { text-align: center; padding: 2rem 0; }
-.profile-pic { width: 150px; border-radius: 50%; margin-bottom: 1rem; }
-.cta-button { display: inline-block; padding: 10px 20px; background: var(--primary); color: #fff; border-radius: 5px; }
-.cta-button:hover { background: var(--secondary); text-decoration: none; }
+.hero {
+  text-align: center;
+  padding: 2rem 0;
+}
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 5px;
+}
+.cta-button:hover {
+  background: var(--secondary);
+  text-decoration: none;
+}
 
 /* Accessibility Enhancements */
 .sr-only {
@@ -372,7 +424,11 @@ body.light .site-footer {
 }
 
 /* Focus styles for keyboard navigation */
-a:focus, button:focus, input:focus, textarea:focus, select:focus {
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
   outline: 2px solid var(--primary);
   outline-offset: 2px;
 }

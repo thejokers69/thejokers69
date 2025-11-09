@@ -7,15 +7,23 @@
 [![roadmap.sh](https://roadmap.sh/card/tall/67a29f6ef863343482fe2f28?variant=dark&roadmaps=full-stack%2Cfrontend%2Ctypescript%2Cbackend)](https://roadmap.sh)
 [![Portfolio](https://img.shields.io/badge/Portfolio-mohamedlakssirt.tech-green)](https://mohamedlakssirt.tech)
 
-> Building intuitive digital experiences with React, TypeScript, and data visualization | Making complex data understandable
+> Building intuitive digital experiences with React, TypeScript, and data visualization |
+> Making complex data understandable
 
 ## 👨‍💻 About **Me**
 
-- 🎓 I'm a third-year Computer Engineering student at Mundiapolis University, currently interning while pursuing my studies.
-- 🌱 I'm building a camera configuration app with React and Tailwind CSS (reducing setup time by 20%) and have completed a task management app for the "Education Digital Twin" system using TypeScript and D3.js.
-- 🔍 Passionate about crafting intuitive web solutions and visualizing data with ML and modern tech stacks, focusing on real-time data analysis and visualization.
-- 🎶 Outside of tech, I enjoy long drives, relaxing on the beach, and listening to piano music.
-- 🚀 Currently exploring LLM integrations in web applications and improving my DevOps skills with CI/CD pipelines.
+- 🎓 I'm a third-year Computer Engineering student at Mundiapolis University,
+  currently interning while pursuing my studies.
+- 🌱 I'm building a camera configuration app with React and Tailwind CSS
+  (reducing setup time by 20%) and have completed a task management app for the
+  "Education Digital Twin" system using TypeScript and D3.js.
+- 🔍 Passionate about crafting intuitive web solutions and visualizing data with
+  ML and modern tech stacks, focusing on real-time data analysis and
+  visualization.
+- 🎶 Outside of tech, I enjoy long drives, relaxing on the beach, and listening
+  to piano music.
+- 🚀 Currently exploring LLM integrations in web applications and improving my
+  DevOps skills with CI/CD pipelines.
 
 ### 📊 GitHub Stats
 
@@ -57,28 +65,32 @@ timeline
 
 Here are some of my standout projects:
 
-- **[Real-Time IoT Monitoring System](https://github.com/thejokers69/Dockerized-IoT-Dataflow)**  
-  Dockerized pipeline for sensor data visualization, handling 100+ data points/sec.  
-  *Tech Stack*: Docker, MQTT, InfluxDB, Grafana  
-  *Metrics*: Reduced setup time by 40%, improved data processing efficiency by 25%  
-  *Takeaway*: *Mastered real-time data pipelines for IoT scalability.*  
+- **[Real-Time IoT Monitoring System](https://github.com/thejokers69/Dockerized-IoT-Dataflow)**
+  Dockerized pipeline for sensor data visualization, handling 100+ data
+  points/sec.
+  *Tech Stack*: Docker, MQTT, InfluxDB, Grafana
+  *Metrics*: Reduced setup time by 40%, improved data processing efficiency by
+  25%
+  *Takeaway*: *Mastered real-time data pipelines for IoT scalability.*
   
-- **[AI-Powered Banking Chatbot](https://github.com/thejokers69/E-bank-Chatbot)**  
-  Spring MVC chatbot with RAG integration, cutting query resolution time by 15%.  
-  *Tech Stack*: Java, Spring MVC, TensorFlow, RAG  
-  *Metrics*: 15% faster customer query resolution, 90% accuracy in document analysis  
+- **[AI-Powered Banking Chatbot](https://github.com/thejokers69/E-bank-Chatbot)**
+  Spring MVC chatbot with RAG integration, cutting query resolution time by
+  15%.
+  *Tech Stack*: Java, Spring MVC, TensorFlow, RAG
+  *Metrics*: 15% faster customer query resolution, 90% accuracy in document
+  analysis
   *Takeaway*: *Blended AI with user-facing apps.*
 
-- **[Travel Reservation API](https://github.com/thejokers69/travel-reservation-api)**  
-  REST API for travel bookings with automated pricing logic.  
-  *Tech Stack*: Node.js, Express, MongoDB  
-  *Metrics*: Handles 200+ concurrent requests, 99.5% uptime  
+- **[Travel Reservation API](https://github.com/thejokers69/travel-reservation-api)**
+  REST API for travel bookings with automated pricing logic.
+  *Tech Stack*: Node.js, Express, MongoDB
+  *Metrics*: Handles 200+ concurrent requests, 99.5% uptime
   *Takeaway*: *Improved API efficiency with middleware.*
 
-- **[Data Analyzer](https://github.com/thejokers69/analyseur_donnees)**  
-  Django app for crunching data files with visualizations like heatmaps.  
-  *Tech Stack*: Python, Django, Pandas, Seaborn  
-  *Metrics*: Processes datasets up to 500MB with optimized memory usage  
+- **[Data Analyzer](https://github.com/thejokers69/analyseur_donnees)**
+  Django app for crunching data files with visualizations like heatmaps.
+  *Tech Stack*: Python, Django, Pandas, Seaborn
+  *Metrics*: Processes datasets up to 500MB with optimized memory usage
   *Takeaway*: *Streamlined data insights with clean code.*
 
 ### 🛠️ Code Quality Practices
@@ -93,7 +105,8 @@ I'm committed to maintaining high-quality code in all my projects:
 
 ### 🤝 Contributions
 
-I'm sharpening my skills on real-world projects and I'm eager to dive into open-source collabs. Got a cool idea? Let's code it up!  
+I'm sharpening my skills on real-world projects and I'm eager to dive into
+open-source collabs. Got a cool idea? Let's code it up!
 **[Join me on GitHub](https://github.com/thejokers69)**
 
 I'm particularly interested in contributing to:
@@ -119,7 +132,8 @@ Love to talk tech, data viz, or beach vibes? Hit me up!
 ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![Solidity](https://img.shields.io/badge/Solidity-e6e6e6?style=for-the-badge&logo=solidity&logoColor=black) (currently learning)
+![Solidity](https://img.shields.io/badge/Solidity-e6e6e6?style=for-the-badge&logo=solidity&logoColor=black)
+(currently learning)
 
 #### Frontend
 
@@ -169,5 +183,7 @@ Love to talk tech, data viz, or beach vibes? Hit me up!
 
 ### 🏆 Certifications & Learning
 
-![FreeCodeCamp](https://img.shields.io/badge/FreeCodeCamp-0A0A23?style=for-the-badge&logo=freecodecamp&logoColor=white) Responsive Web Design
-![Coursera](https://img.shields.io/badge/Coursera-0056D2?style=for-the-badge&logo=Coursera&logoColor=white) Machine Learning Foundations
+![FreeCodeCamp](https://img.shields.io/badge/FreeCodeCamp-0A0A23?style=for-the-badge&logo=freecodecamp&logoColor=white)
+Responsive Web Design
+![Coursera](https://img.shields.io/badge/Coursera-0056D2?style=for-the-badge&logo=Coursera&logoColor=white)
+Machine Learning Foundations
