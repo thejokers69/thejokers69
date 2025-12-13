@@ -2,6 +2,7 @@ package handlers
 
 import (
 	"net/http"
+	"net/url"
 	"os"
 	"path/filepath"
 	"strings"
@@ -26,6 +27,18 @@ func StaticHandler(c *gin.Context) {
 	}
 
 	// Security: prevent directory traversal
+	// Unescape the path to handle encoded sequences like %2e%2e
+	if decoded, err := url.PathUnescape(filepathParam); err == nil && decoded != "" {
+		// prefer decoded path if decoding succeeded
+		path = strings.TrimPrefix(decoded, "/")
+		// Remap assets -> static again (in case decoded changed it)
+		if strings.HasPrefix(path, "assets/") {
+			path = strings.Replace(path, "assets/", "static/", 1)
+		} else if !strings.HasPrefix(path, "static/") {
+			path = "static/" + path
+		}
+	}
+
 	// Clean the path to resolve any ".." sequences
 	cleanPath := filepath.Clean(path)
 
@@ -42,6 +55,11 @@ func StaticHandler(c *gin.Context) {
 	if err != nil {
 		c.String(http.StatusBadRequest, "Invalid path")
 		return
+	}
+
+	// Resolve symlinks to ensure a symlink doesn't make the path escape
+	if resolved, err := filepath.EvalSymlinks(fullAbsPath); err == nil {
+		fullAbsPath = resolved
 	}
 
 	// Ensure the path is strictly within the static directory
