@@ -1,0 +1,56 @@
+package components
+
+import (
+	"strconv"
+	"time"
+	"github.com/thejokers69/thejokers69/internal/models"
+)
+
+templ Footer(site *models.Site) {
+	<footer class="site-footer">
+		<div class="wrapper">
+			<div class="footer-content">
+				<div class="social-links" aria-label="Social media links">
+					<a
+						href={ "https://github.com/" + site.Author.GitHub }
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="GitHub Profile"
+					>
+						<i class="fab fa-github"></i>
+					</a>
+					<a
+						href={ "https://www.linkedin.com/in/" + site.Author.LinkedIn }
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="LinkedIn Profile"
+					>
+						<i class="fab fa-linkedin"></i>
+					</a>
+					<a href="mailto:mohamed.lakssir@gmail.com" aria-label="Email Me">
+						<i class="fas fa-envelope"></i>
+					</a>
+				</div>
+
+				<p class="copyright">
+					&copy; { site.Title } { strconv.Itoa(time.Now().Year()) }
+				</p>
+
+				<div class="tech-stack">
+					<span>Powered by:</span>
+					<div class="stack-icons" aria-label="Technologies used">
+						<i class="fab fa-docker" title="Docker"></i>
+						<i class="fab fa-js-square" title="JavaScript"></i>
+						<i class="fab fa-python" title="Python"></i>
+						<i class="fab fa-golang" title="Go"></i>
+					</div>
+				</div>
+				<div class="identity">
+					<p>{ site.Author.Name }</p>
+					<p class="digital-id">{ "Digital identity: @" + site.Author.GitHub }</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+}
+

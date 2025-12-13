@@ -1,0 +1,24 @@
+package components
+
+import "github.com/thejokers69/thejokers69/internal/models"
+
+templ Header(site *models.Site, navHTML string) {
+	<header class="site-header">
+		<div class="wrapper">
+			<a class="site-title" rel="author" href={ templ.URL(site.BaseURL + "/") }>
+				<span class="gradient-text">{ site.Author.Name }</span>
+				<small class="username">{ "@" + site.Author.GitHub }</small>
+			</a>
+			<nav class="site-nav" aria-labelledby="site-nav-menu">
+				<div class="trigger">
+					@rawHTML(navHTML)
+				</div>
+			</nav>
+			<button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme" aria-pressed="true">
+				<span class="sun-moon" aria-hidden="true"></span>
+				<span class="sr-only">Toggle theme</span>
+			</button>
+		</div>
+	</header>
+}
+

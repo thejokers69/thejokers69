@@ -1,0 +1,34 @@
+package pages
+
+import (
+	"github.com/a-h/templ"
+	"github.com/thejokers69/thejokers69/internal/models"
+	"github.com/thejokers69/thejokers69/templates/components"
+)
+
+templ Base(pageTitle string, pageDescription string, pagePermalink string, site *models.Site, navHTML string, content templ.Component, postHogScript string) {
+	<!DOCTYPE html>
+	<html lang="en-US">
+		<head>
+			@components.Head(pageTitle, pageDescription, pagePermalink, site, postHogScript)
+		</head>
+		<body class="dark">
+			<div class="wrapper">
+				<!-- Header Section -->
+				@components.Header(site, navHTML)
+
+				<!-- Main Content -->
+				<main class="main-content" id="main-content">
+					@content
+				</main>
+
+				<!-- Footer Section -->
+				@components.Footer(site)
+			</div>
+
+			<!-- JavaScript -->
+			<script src={ templ.URL(site.BaseURL + "/assets/js/main.js") }></script>
+		</body>
+	</html>
+}
+

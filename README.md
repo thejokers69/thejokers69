@@ -12,18 +12,14 @@
 
 ## 👨‍💻 About **Me**
 
-- 🎓 I'm a third-year Computer Engineering student at Mundiapolis University,
-  currently interning while pursuing my studies.
-- 🌱 I'm building a camera configuration app with React and Tailwind CSS
-  (reducing setup time by 20%) and have completed a task management app for the
-  "Education Digital Twin" system using TypeScript and D3.js.
-- 🔍 Passionate about crafting intuitive web solutions and visualizing data with
-  ML and modern tech stacks, focusing on real-time data analysis and
-  visualization.
-- 🎶 Outside of tech, I enjoy long drives, relaxing on the beach, and listening
-  to piano music.
-- 🚀 Currently exploring LLM integrations in web applications and improving my
-  DevOps skills with CI/CD pipelines.
+- 🎓 Third-year Computer Engineering student at Mundiapolis University (Sept 2023 - June 2026), currently
+seeking PFE (Final Year Project) internship opportunities
+- 🌱 Completed internships at DIGIEYE (Frontend Developer, Feb-Jun 2025) and Mascir (Web Developer, Jul-Oct
+2024), focusing on React applications and data visualization
+- 🔍 Passionate about crafting intuitive web solutions and visualizing
+  complex data with ML and modern tech stacks
+- 🚀 Currently exploring LLM integrations in web applications and mastering DevOps with CI/CD pipelines
+- 🎶 Outside of tech, I enjoy long drives, relaxing on the beach, and listening to piano music
 
 ### 📊 GitHub Stats
 
@@ -59,39 +55,48 @@ timeline
          : Mastering DevOps practices
 ```
 
-### 🌟 Projects
+### 🌟 Featured Projects
 
-*(Private) Repo: Camera Configurator and Task Manager for Education Digital Twin.*
+<div align="center">
 
-Here are some of my standout projects:
+| Project | Tech Stack | Impact | Status |
+|---------|------------|--------|--------|
+| [**Camera Configurator**](https://github.com/thejokers69/DIGIEYE-Camera-Configurator) | React, Vite, Tailwind CSS, React Context | Enhanced UI with PTZ controls, SOLID principles | ✅ Completed (2025) |
+| [**Real-Time IoT Pipeline**](https://github.com/thejokers69/Dockerized-IoT-Dataflow) | Docker, MQTT, InfluxDB, Grafana | 250+ sensor readings/sec, 99.9% uptime | ✅ Completed (2023) |
+| [**AI Banking Chatbot**](https://github.com/thejokers69/E-bank-Chatbot) | Java, Spring MVC, TensorFlow, RAG | 15% faster queries, 90% accuracy | ✅ Completed (2023) |
+| [**Travel API**](https://github.com/thejokers69/travel-reservation-api) | Node.js, Express, MongoDB | 200+ concurrent req, 99.5% uptime | ✅ Completed (2022) |
+
+</div>
+
+#### 🚀 Notable Projects
+
+- **[Camera Configuration Interface - DIGIEYE](https://github.com/thejokers69/DIGIEYE-Camera-Configurator)**
+  React-based camera configuration interface developed during internship
+  at DIGIEYE. Enhanced 'Live' page with PTZ controls, built 'Playback'
+  page with stream viewer, and implemented toggle-based UI features.
+  *Tech Stack*: React, Vite, React Router, Tailwind CSS, SVGR, React Context
+  *Impact*: Improved codebase maintainability by applying SOLID
+  principles, delivered polished UI for camera management
+  *Key Achievement*: Synchronized settings between modules and presented
+  interface to supervisors (Feb-Jun 2025)
 
 - **[Real-Time IoT Monitoring System](https://github.com/thejokers69/Dockerized-IoT-Dataflow)**
-  Dockerized pipeline for sensor data visualization, handling 100+ data
-  points/sec.
+  Dockerized pipeline for sensor data visualization, handling 250+ data points/sec with 99.9% uptime.
   *Tech Stack*: Docker, MQTT, InfluxDB, Grafana
-  *Metrics*: Reduced setup time by 40%, improved data processing efficiency by
-  25%
-  *Takeaway*: *Mastered real-time data pipelines for IoT scalability.*
-  
+  *Impact*: Reduced setup time by 40%, improved data processing efficiency by 25%
+  *Key Achievement*: Architected scalable IoT infrastructure for industrial monitoring (Sep-Dec 2023)
+
 - **[AI-Powered Banking Chatbot](https://github.com/thejokers69/E-bank-Chatbot)**
-  Spring MVC chatbot with RAG integration, cutting query resolution time by
-  15%.
+  Spring MVC chatbot with RAG integration, achieving 90% accuracy in document analysis.
   *Tech Stack*: Java, Spring MVC, TensorFlow, RAG
-  *Metrics*: 15% faster customer query resolution, 90% accuracy in document
-  analysis
-  *Takeaway*: *Blended AI with user-facing apps.*
+  *Impact*: 15% faster customer query resolution, improved user satisfaction
+  *Key Achievement*: Successfully blended AI with enterprise banking applications (Jun-Aug 2023)
 
 - **[Travel Reservation API](https://github.com/thejokers69/travel-reservation-api)**
-  REST API for travel bookings with automated pricing logic.
+  REST API for travel bookings with automated pricing logic and high concurrency.
   *Tech Stack*: Node.js, Express, MongoDB
-  *Metrics*: Handles 200+ concurrent requests, 99.5% uptime
-  *Takeaway*: *Improved API efficiency with middleware.*
-
-- **[Data Analyzer](https://github.com/thejokers69/analyseur_donnees)**
-  Django app for crunching data files with visualizations like heatmaps.
-  *Tech Stack*: Python, Django, Pandas, Seaborn
-  *Metrics*: Processes datasets up to 500MB with optimized memory usage
-  *Takeaway*: *Streamlined data insights with clean code.*
+  *Impact*: Handles 200+ concurrent requests, maintains 99.5% uptime
+  *Key Achievement*: Optimized API performance with advanced middleware patterns (Nov-Dec 2022)
 
 ### 🛠️ Code Quality Practices
 
@@ -187,3 +192,39 @@ Love to talk tech, data viz, or beach vibes? Hit me up!
 Responsive Web Design
 ![Coursera](https://img.shields.io/badge/Coursera-0056D2?style=for-the-badge&logo=Coursera&logoColor=white)
 Machine Learning Foundations
+
+### 🏆 Recent Achievements & Certifications
+
+<div align="center">
+
+| Certification | Issuer | Status | Year |
+|---------------|--------|--------|------|
+| HCIA-Cloud Computing | Huawei | ✅ Completed | 2024 |
+| Machine Learning Foundations | Coursera | ✅ Completed | 2024 |
+| Responsive Web Design | FreeCodeCamp | ✅ Completed | 2023 |
+| Full-Stack Development | Self-Paced | 🚧 In Progress | 2025 |
+
+</div>
+
+#### 🎯 Key Milestones 2024-2025
+
+- 🏢 **Frontend Developer Intern** at DIGIEYE - Built React-based camera
+- configuration interface with PTZ controls and modular components (Feb-Jun 2025)
+- 🏢 **Web Developer Intern** at Mascir - Developed administrative
+- dashboard for fruit classification data visualization (Jul-Oct 2024)
+- ☁️ **HCIA Cloud Certification** - Mastered cloud computing fundamentals and AWS services (Dec 2024)
+- 🤖 **AI Integration Projects** - Successfully deployed RAG-powered chatbot with 90% accuracy
+- 📊 **Analytics Platform** - Developed custom analytics system with real-time tracking
+
+### 📫 Let's Connect
+
+<div align="center">
+
+**Love to talk tech, data viz, or beach vibes? Let's connect!**
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-mohamedlakssirt.tech-FF6B6B?style=for-the-badge&logo=firefox&logoColor=white)](https://mohamedlakssirt.tech)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mohamed-lakssir-b6b4301a4/)
+[![Email](https://img.shields.io/badge/Email-Contact%20Me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@mohamedlakssirt.tech)
+[![Linktree](https://img.shields.io/badge/All_Links-Linktree-39E09B?style=for-the-badge&logo=linktree&logoColor=white)](https://linktr.ee/MohamedLakssir)
+
+</div>
