@@ -1,16 +1,17 @@
 name: Build Go Application for Deployment
 
+permissions:
+  contents: read
+  pull-requests: read
+  checks: write
+  actions: read
+
 on:
   push:
     branches:
       - preview
       - master
   workflow_dispatch:
-permissions:
-  contents: read
-  pull-requests: read
-  checks: write
-  actions: read
 
 env:
   GO_VERSION: "1.25.3"

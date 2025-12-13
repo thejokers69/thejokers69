@@ -169,14 +169,6 @@ else
     cat server_startup.log
 fi
 
-# Check server startup log
-if grep -q "Server starting on port $PORT" server_startup.log; then
-    print_status "Server startup log shows success"
-else
-    print_warning "Server startup log may have issues"
-    cat server_startup.log
-fi
-
 # Clean up
 rm -f server server_startup.log
 
