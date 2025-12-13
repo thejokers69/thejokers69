@@ -1,0 +1,124 @@
+name: Build and Test Go Application
+
+on:
+  push:
+    branches:
+      - preview
+      - master
+  pull_request:
+    branches:
+      - preview
+      - master
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pull-requests: read
+  checks: write
+  actions: read
+
+env:
+  GO_VERSION: "1.25.3"
+  TEMPL_VERSION: "v0.3.960"
+
+jobs:
+  test:
+    name: Test and Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ env.GO_VERSION }}
+          cache-dependencies: true
+
+      - name: Install templ
+        run: |
+          go install github.com/a-h/templ/cmd/templ@${{ env.TEMPL_VERSION }}
+
+      - name: Verify templ installation
+        run: |
+          templ version || echo "templ installed"
+
+      - name: Generate templ files
+        run: |
+          templ generate ./templates/...
+          echo "✅ Templ files generated"
+
+      - name: Verify templ files generated
+        run: |
+          if [ -f templates/components/head_templ.go ] && \
+             [ -f templates/components/header_templ.go ] && \
+             [ -f templates/components/footer_templ.go ] && \
+             [ -f templates/pages/base_templ.go ]; then
+            echo "✅ All templ files generated successfully"
+          else
+            echo "❌ Missing templ generated files"
+            exit 1
+          fi
+
+      - name: Download dependencies
+        run: |
+          go mod download
+          go mod verify
+          echo "✅ Dependencies downloaded"
+
+      - name: Run Go linter
+        continue-on-error: true
+        uses: golangci/golangci-lint-action@v6
+        with:
+          version: latest
+          args: --timeout=5m
+
+      - name: Build application
+        run: |
+          go build -v -o server ./cmd/server/main.go
+          echo "✅ Build successful"
+        env:
+          CGO_ENABLED: 0
+          GOOS: linux
+          GOARCH: amd64
+
+      - name: Verify build
+        run: |
+          if [ -f server ]; then
+            echo "✅ Server binary created successfully"
+            ls -lh server
+            file server
+          else
+            echo "❌ Build failed - server binary not found"
+            exit 1
+          fi
+
+      - name: Test static files exist
+        run: |
+          if [ -f static/css/style.css ] && \
+             [ -f static/js/main.js ] && \
+             [ -f static/images/Logo-Of-TheJokerML.jpg ]; then
+            echo "✅ All static files present"
+          else
+            echo "❌ Missing static files"
+            exit 1
+          fi
+
+      - name: Test content files exist
+        run: |
+          if [ -f content/pages/index.md ] && \
+             [ -f content/pages/profile.md ] && \
+             [ -f content/pages/projects.md ]; then
+            echo "✅ All content files present"
+          else
+            echo "❌ Missing content files"
+            exit 1
+          fi
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: server-binary
+          path: server
+          retention-days: 7
