@@ -49,6 +49,21 @@ jobs:
           templ generate ./templates/...
           echo "✅ Templ files generated"
 
+      - name: Verify templ imports are not duplicated
+        run: |
+          dup_found=0
+          for f in templates/**/*.go; do
+            count=$(grep -c '"github.com/a-h/templ"' "$f" || true)
+            if [ "$count" -gt 1 ]; then
+              echo "Duplicate templ import found in $f (count=$count)"
+              dup_found=1
+            fi
+          done
+          if [ "$dup_found" -eq 1 ]; then
+            echo "❌ Duplicate templ import detected"
+            exit 1
+          fi
+
       - name: Verify templ files generated
         run: |
           if [ -f templates/components/head_templ.go ] && \
