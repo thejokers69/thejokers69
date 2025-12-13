@@ -1,0 +1,105 @@
+name: Cleanup All Unsuccessful Workflow Runs
+
+on:
+    workflow_dispatch: {}
+    schedule:
+        - cron: "0 3 * * *" # runs daily at 03:00 UTC
+
+permissions:
+    actions: write
+
+jobs:
+    cleanup:
+        runs-on: ubuntu-latest
+        env:
+            SLEEP_MS: "300"
+        steps:
+            - name: Install jq
+              run: sudo apt-get update && sudo apt-get install -y jq
+
+            - name: Delete all failed, cancelled, and skipped workflow runs
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  REPO_FULL: ${{ github.repository }}
+                  SLEEP_MS: ${{ env.SLEEP_MS }}
+              run: |
+                  set -euo pipefail
+                  REPO="$REPO_FULL"
+                  owner="${REPO%/*}"
+                  repo="${REPO#*/}"
+                  echo "Repository: $owner/$repo"
+                  echo "Deleting all workflow runs with status: failure, cancelled, or skipped"
+
+                  # First, get all workflow IDs to ensure we check all workflows
+                  echo "Fetching all workflow IDs..."
+                  workflows=$(curl -sSf -H "Authorization: Bearer $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" \
+                    "https://api.github.com/repos/$owner/$repo/actions/workflows?per_page=100" | jq -r '.workflows[].id')
+
+                  total_deleted=0
+
+                  # Process each workflow individually to ensure we get all runs
+                  for workflow_id in $workflows; do
+                    echo "Processing workflow ID: $workflow_id"
+                    page=1
+                    while :; do
+                      echo "Fetching page $page for workflow $workflow_id"
+                      resp=$(curl -sSf -H "Authorization: Bearer $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" \
+                        "https://api.github.com/repos/$owner/$repo/actions/workflows/$workflow_id/runs?per_page=100&page=$page")
+                      count=$(echo "$resp" | jq '.workflow_runs | length')
+                      [ "$count" -eq 0 ] && break
+                      
+                      # Debug: show what we're finding
+                      echo "Found $count runs on page $page"
+                      
+                      # Filter and delete runs with failure, cancelled, or skipped status
+                      echo "$resp" \
+                        | jq -r '.workflow_runs[] | select(.conclusion=="failure" or .conclusion=="cancelled" or .conclusion=="skipped") | "\(.id)|\(.html_url)|\(.created_at)|\(.name)|\(.conclusion)"' \
+                        | while IFS='|' read -r id url created_at name conclusion; do
+                            if [ -n "$id" ]; then
+                              echo "Found $conclusion run: $id $name $created_at $url"
+                              echo "Deleting $id ..."
+                              if curl -sSf -X DELETE -H "Authorization: Bearer $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" \
+                                "https://api.github.com/repos/$owner/$repo/actions/runs/$id"; then
+                                echo "✓ Deleted $id"
+                              else
+                                echo "✗ Failed to delete $id"
+                              fi
+                              sleep $(awk "BEGIN {print $SLEEP_MS/1000}")
+                            fi
+                          done
+                      page=$((page+1))
+                    done
+                  done
+
+                  # Also check the general runs endpoint as fallback
+                  echo "Checking general runs endpoint as fallback..."
+                  page=1
+                  while :; do
+                    echo "Fetching page $page from general runs endpoint"
+                    resp=$(curl -sSf -H "Authorization: Bearer $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" \
+                      "https://api.github.com/repos/$owner/$repo/actions/runs?per_page=100&page=$page")
+                    count=$(echo "$resp" | jq '.workflow_runs | length')
+                    [ "$count" -eq 0 ] && break
+                    
+                    echo "$resp" \
+                      | jq -r '.workflow_runs[] | select(.conclusion=="failure" or .conclusion=="cancelled" or .conclusion=="skipped") | "\(.id)|\(.html_url)|\(.created_at)|\(.name)|\(.conclusion)"' \
+                      | while IFS='|' read -r id url created_at name conclusion; do
+                          if [ -n "$id" ]; then
+                            echo "Found $conclusion run: $id $name $created_at $url"
+                            echo "Deleting $id ..."
+                            if curl -sSf -X DELETE -H "Authorization: Bearer $GITHUB_TOKEN" -H "Accept: application/vnd.github+json" \
+                              "https://api.github.com/repos/$owner/$repo/actions/runs/$id"; then
+                              echo "✓ Deleted $id"
+                              total_deleted=$((total_deleted + 1))
+                            else
+                              echo "✗ Failed to delete $id"
+                            fi
+                            sleep $(awk "BEGIN {print $SLEEP_MS/1000}")
+                          fi
+                        done
+                    page=$((page+1))
+                  done
+
+                  echo "=========================================="
+                  echo "Cleanup completed."
+                  echo "Done."
