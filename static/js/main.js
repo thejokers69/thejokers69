@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } catch (e) {
       body.className = theme;
       console.warn(
-        "LocalStorage non-disponible, utilisation de la session uniquement."
+        "LocalStorage not available, using session only."
       );
     }
   }
