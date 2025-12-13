@@ -43,13 +43,13 @@ jobs:
       - name: Verify templ imports are not duplicated
         run: |
           dup_found=0
-          for f in templates/**/*.go; do
+          while IFS= read -r -d '' f; do
             count=$(grep -c '"github.com/a-h/templ"' "$f" || true)
             if [ "$count" -gt 1 ]; then
               echo "Duplicate templ import found in $f (count=$count)"
               dup_found=1
             fi
-          done
+          done < <(find templates -type f -name "*.go" -print0)
           if [ "$dup_found" -eq 1 ]; then
             echo "❌ Duplicate templ import detected"
             exit 1
@@ -125,13 +125,13 @@ jobs:
       - name: Verify templ imports are not duplicated
         run: |
           dup_found=0
-          for f in templates/**/*.go; do
+          while IFS= read -r -d '' f; do
             count=$(grep -c '"github.com/a-h/templ"' "$f" || true)
             if [ "$count" -gt 1 ]; then
               echo "Duplicate templ import found in $f (count=$count)"
               dup_found=1
             fi
-          done
+          done < <(find templates -type f -name "*.go" -print0)
           if [ "$dup_found" -eq 1 ]; then
             echo "❌ Duplicate templ import detected"
             exit 1
@@ -140,7 +140,12 @@ jobs:
       - name: Download dependencies
         run: |
           go mod download
+          go mod verify
 
+      - name: Build for ${{ matrix.goos }}/${{ matrix.goarch }}
+        run: |
+          OUTPUT="server-${{ matrix.goos }}-${{ matrix.goarch }}"
+          if [ "${{ matrix.goos }}" = "windows" ]; then
             OUTPUT="${OUTPUT}.exe"
           fi
           GOOS=${{ matrix.goos }} GOARCH=${{ matrix.goarch }} go build -v -o "${OUTPUT}" ./cmd/server/main.go
