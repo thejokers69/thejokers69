@@ -5,20 +5,18 @@
 [![GitHub followers](https://img.shields.io/github/followers/thejokers69?style=social)](https://github.com/thejokers69)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue)](https://linkedin.com/in/mohamed-lakssir-b6b4301a4/)
 [![roadmap.sh](https://roadmap.sh/card/tall/67a29f6ef863343482fe2f28?variant=dark&roadmaps=full-stack%2Cfrontend%2Ctypescript%2Cbackend)](https://roadmap.sh)
-[![Portfolio](https://img.shields.io/badge/Portfolio-mohamedlakssirt.tech-green)](https://mohamedlakssirt.tech)
+[![Portfolio](https://img.shields.io/badge/Portfolio-mohamedlakssirt.tech-green)](https://www.mohamedlakssirt.tech)
 
 > Building intuitive digital experiences with React, TypeScript, and data visualization |
 > Making complex data understandable
 
 ## 👨‍💻 About **Me**
 
-- 🎓 Third-year Computer Engineering student at Mundiapolis University (Sept 2023 - June 2026), currently
-seeking PFE (Final Year Project) internship opportunities
-- 🌱 Completed internships at DIGIEYE (Frontend Developer, Feb-Jun 2025) and Mascir (Web Developer, Jul-Oct
-2024), focusing on React applications and data visualization
-- 🔍 Passionate about crafting intuitive web solutions and visualizing
-  complex data with ML and modern tech stacks
-- 🚀 Currently exploring LLM integrations in web applications and mastering DevOps with CI/CD pipelines
+- 🎓 Computer Engineering graduate, Mundiapolis University (Sept 2023 – June 2026)
+- 💼 Open to full-stack / frontend roles and PFE-to-hire conversions
+- 🌱 Internships: DIGIEYE (Frontend, Feb–Jun 2025) · Mascir (Web, Jul–Oct 2024)
+- 🔍 React, Next.js, TypeScript, Docker, and data visualization
+- 🚀 Recent: IBM Front-End Capstone (StayHealthy medical booking, 2026)
 - 🎶 Outside of tech, I enjoy long drives, relaxing on the beach, and listening to piano music
 
 ### 📊 GitHub Stats
@@ -50,9 +48,11 @@ timeline
     2024 : HCIA-Cloud Computing Certification
          : Full-Stack Developer Internship at Mascir
          : Built IoT Pipeline handling 100+ data points/sec
-    2025 : Cloud/Web Development Internship (Current)
-         : Working on scalable cloud solutions
-         : Mastering DevOps practices
+    2025 : DIGIEYE Frontend Internship (camera configurator)
+         : HCIA-Cloud + IBM / Google Cloud certs
+    2026 : Computer Engineering graduate (Mundiapolis)
+         : IBM Front-End Capstone — medical appointment platform
+         : Open to full-stack roles
 ```
 
 ### 🌟 Featured Projects
@@ -60,25 +60,33 @@ timeline
 <div align="center">
 
 | Project | Tech Stack | Impact | Status |
-|---------|------------|--------|--------|
-| [**Camera Configurator**](https://github.com/thejokers69/DIGIEYE-Camera-Configurator) | React, Vite, Tailwind CSS, React Context | Enhanced UI with PTZ controls, SOLID principles | ✅ Completed (2025) |
-| [**Real-Time IoT Pipeline**](https://github.com/thejokers69/Dockerized-IoT-Dataflow) | Docker, MQTT, InfluxDB, Grafana | 250+ sensor readings/sec, 99.9% uptime | ✅ Completed (2023) |
-| [**AI Banking Chatbot**](https://github.com/thejokers69/E-bank-Chatbot) | Java, Spring MVC, TensorFlow, RAG | 15% faster queries, 90% accuracy | ✅ Completed (2023) |
-| [**Travel API**](https://github.com/thejokers69/travel-reservation-api) | Node.js, Express, MongoDB | 200+ concurrent req, 99.5% uptime | ✅ Completed (2022) |
+| --------- | ------------ | -------- | -------- |
+| [**StayHealthy**](https://github.com/thejokers69/grihf-frontend_capstone_starter_code) | JavaScript, React | IBM Front-End capstone — doctor search and booking | ✅ 2026 |
+| [**Medical booking**](https://github.com/thejokers69/med_appt) | JavaScript | Appointment booking and doctor search | ✅ 2026 |
+| [**Real-Time IoT Pipeline**](https://github.com/thejokers69/Dockerized-IoT-Dataflow) | Docker, MQTT, InfluxDB, Grafana | Sensor pipeline with Grafana dashboards | ✅ Completed (2023) |
+| [**AI Banking Chatbot**](https://github.com/thejokers69/E-bank-Chatbot) | Java, Spring MVC, RAG | Document-aware banking chatbot | ✅ Completed (2023) |
+| [**Weather MCP**](https://github.com/thejokers69/Weather-MCP-Server) | JavaScript, MCP | Forecasts and alerts for MCP clients | ✅ 2026 |
+| [**24h Stories**](https://github.com/thejokers69/24h-Story-Feature) | Next.js, TypeScript, Tailwind CSS | Stories UI with swipe gestures | ✅ 2025 |
 
 </div>
 
 #### 🚀 Notable Projects
 
-- **[Camera Configuration Interface - DIGIEYE](https://github.com/thejokers69/DIGIEYE-Camera-Configurator)**
-  React-based camera configuration interface developed during internship
-  at DIGIEYE. Enhanced 'Live' page with PTZ controls, built 'Playback'
-  page with stream viewer, and implemented toggle-based UI features.
-  *Tech Stack*: React, Vite, React Router, Tailwind CSS, SVGR, React Context
-  *Impact*: Improved codebase maintainability by applying SOLID
-  principles, delivered polished UI for camera management
-  *Key Achievement*: Synchronized settings between modules and presented
-  interface to supervisors (Feb-Jun 2025)
+- **[StayHealthy — IBM Front-End Capstone](https://github.com/thejokers69/grihf-frontend_capstone_starter_code)**
+  Medical appointment front end: doctor search and booking.
+  Companion app: [med_appt](https://github.com/thejokers69/med_appt).
+  *Tech Stack*: JavaScript, React
+  *Key Achievement*: IBM Front-End Development capstone (2026)
+
+- **[Weather MCP Server](https://github.com/thejokers69/Weather-MCP-Server)**
+  MCP server for forecasts and severe-weather alerts via the US National Weather Service API.
+  *Tech Stack*: JavaScript, Model Context Protocol
+  *Key Achievement*: Usable from Claude Desktop and other MCP clients (2026)
+
+- **[24h Stories](https://github.com/thejokers69/24h-Story-Feature)**
+  Client-side stories UI with swipe gestures and theme support.
+  *Tech Stack*: Next.js, TypeScript, Tailwind CSS
+  *Live*: [GitHub Pages](https://thejokers69.github.io/24h-Story-Feature/)
 
 - **[Real-Time IoT Monitoring System](https://github.com/thejokers69/Dockerized-IoT-Dataflow)**
   Dockerized pipeline for sensor data visualization, handling 250+ data points/sec with 99.9% uptime.
@@ -198,23 +206,21 @@ Machine Learning Foundations
 <div align="center">
 
 | Certification | Issuer | Status | Year |
-|---------------|--------|--------|------|
+| --------------- | -------- | -------- | ------ |
 | HCIA-Cloud Computing | Huawei | ✅ Completed | 2024 |
 | Machine Learning Foundations | Coursera | ✅ Completed | 2024 |
 | Responsive Web Design | FreeCodeCamp | ✅ Completed | 2023 |
-| Full-Stack Development | Self-Paced | 🚧 In Progress | 2025 |
+| IBM Front-End Development Capstone | IBM / Google | ✅ Completed | 2026 |
 
 </div>
 
-#### 🎯 Key Milestones 2024-2025
+#### 🎯 Key Milestones 2024–2026
 
-- 🏢 **Frontend Developer Intern** at DIGIEYE - Built React-based camera
-- configuration interface with PTZ controls and modular components (Feb-Jun 2025)
-- 🏢 **Web Developer Intern** at Mascir - Developed administrative
-- dashboard for fruit classification data visualization (Jul-Oct 2024)
-- ☁️ **HCIA Cloud Certification** - Mastered cloud computing fundamentals and AWS services (Dec 2024)
-- 🤖 **AI Integration Projects** - Successfully deployed RAG-powered chatbot with 90% accuracy
-- 📊 **Analytics Platform** - Developed custom analytics system with real-time tracking
+- 🎓 **Computer Engineering graduate**, Mundiapolis University (June 2026)
+- 🏥 **IBM Front-End Capstone** — StayHealthy medical appointment platform (2026)
+- 🏢 **Frontend Developer Intern** at DIGIEYE — camera configuration UI with PTZ controls (Feb–Jun 2025)
+- 🏢 **Web Developer Intern** at Mascir — fruit-classification dashboard (Jul–Oct 2024)
+- ☁️ **HCIA Cloud Certification** — cloud computing fundamentals (Dec 2024)
 
 ### 📫 Let's Connect
 
@@ -222,7 +228,7 @@ Machine Learning Foundations
 
 **Love to talk tech, data viz, or beach vibes? Let's connect!**
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-mohamedlakssirt.tech-FF6B6B?style=for-the-badge&logo=firefox&logoColor=white)](https://mohamedlakssirt.tech)
+[![Portfolio](https://img.shields.io/badge/Portfolio-mohamedlakssirt.tech-FF6B6B?style=for-the-badge&logo=firefox&logoColor=white)](https://www.mohamedlakssirt.tech)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/mohamed-lakssir-b6b4301a4/)
 [![Email](https://img.shields.io/badge/Email-Contact%20Me-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@mohamedlakssirt.tech)
 [![Linktree](https://img.shields.io/badge/All_Links-Linktree-39E09B?style=for-the-badge&logo=linktree&logoColor=white)](https://linktr.ee/MohamedLakssir)
